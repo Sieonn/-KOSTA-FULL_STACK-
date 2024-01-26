@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f705bbeb-6a93-4867-8cd3-9d544ce46fbf" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2bOJtZqfxj3YXEX9VLforfY3QO6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ArrayExam.executor": "Run",
+    "Application.ArrayExam1.executor": "Run",
+    "Application.ArrayExam10.executor": "Run",
+    "Application.ArrayExam2.executor": "Run",
+    "Application.ArrayExam3.executor": "Run",
+    "Application.ArrayExam4.executor": "Run",
+    "Application.ArrayExam5.executor": "Run",
+    "Application.ArrayExam6.executor": "Run",
+    "Application.ArrayExam7.executor": "Run",
+    "Application.ArrayExam8.executor": "Run",
+    "Application.ArrayExam9.executor": "Run",
+    "Application.ArrayTest2.executor": "Run",
+    "Application.ArrayTest4.executor": "Run",
+    "Application.Exam03.executor": "Run",
+    "Application.Exam04.executor": "Run",
+    "Application.Exam05.executor": "Run",
+    "Application.Exam06.executor": "Run",
+    "Application.Exam08.executor": "Run",
+    "Application.Exam09.executor": "Run",
+    "Application.Exam10.executor": "Run",
+    "Application.Exam12.executor": "Run",
+    "Application.LottiExam.executor": "Run",
+    "Application.SwitchTest2.executor": "Run",
+    "Application.Test1.executor": "Run",
+    "Application.WhileTest1.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "jdk.selected.JAVA_MODULE": "11",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/SE/java_workspace/0126",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.editor",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\SE\java_workspace\0126\src" />
+      <recent name="C:\SE\java_workspace\0125\src" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-11.0.22-corretto-11.0.22-f644763e9732-4a89cc43" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f705bbeb-6a93-4867-8cd3-9d544ce46fbf" name="Changes" comment="" />
+      <created>1706080411031</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706080411031</updated>
+      <workItem from="1706080412137" duration="3598000" />
+      <workItem from="1706143175857" duration="805000" />
+      <workItem from="1706144740331" duration="34000" />
+      <workItem from="1706145573372" duration="365000" />
+      <workItem from="1706145950478" duration="21919000" />
+      <workItem from="1706227485648" duration="5964000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

@@ -1,0 +1,25 @@
+public class SwitchTest2 {
+	public static void main(String[] args) {
+		int kor = 89;
+		int eng = 90;
+		int math = 95;
+		
+		int tot = kor + eng + math; 
+		double avg = (double)tot/3;
+		char grade;
+		int result = 0;
+		
+		avg = Math.round(avg)d;
+		
+		switch(op) {
+		case 'A': result= avg>=90; break;
+		case 'B': result= avg>=80; break;
+		case 'C': result= avg>=70; break;
+		case 'D': result= avg>=60; break;
+		case 'F': result= avg>=50; break;
+		
+
+		System.out.println(String.format("총점:%d, 평균:%.2f, 학점:%C", tot, avg, grade));
+	}
+
+}

@@ -1,0 +1,8 @@
+import java.util.Scanner;
+
+public class SwitchTest2 {
+	public static void main(String[] args) {
+		Scanner sc = new.nextInt();
+		System.out.println(num);
+	}
+}

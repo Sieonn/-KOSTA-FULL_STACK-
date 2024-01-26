@@ -1,0 +1,8 @@
+import java.util.Scanner;
+
+public class WhileTest1 {
+	public static void main(String[] args) {
+		Scanner sc = new.nextInt();
+		System.out.println(num);
+	}
+}

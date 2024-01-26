@@ -1,0 +1,15 @@
+
+public class VariableTest {
+	public static void main(String[] args) {
+		boolean isMarried = true;
+		char bloodType = 'B';
+		int age = 30;
+		double height = 173.5;
+		float weight = 75.3f;
+		byte b = 128;
+		System.out.println(age);
+		System.out.println(height);
+		System.out.println(weight);
+	}
+
+}
