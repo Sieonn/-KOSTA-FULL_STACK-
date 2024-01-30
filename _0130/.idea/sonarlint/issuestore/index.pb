@@ -9,3 +9,11 @@ F
 src/VariableTest1.java,0\c\0c2c1d009ea15b840386fe8ffc19220535e087aa
 D
 src/StaticTest1.java,e\e\ee9aa861751eb9b703e260c3b6151183559bb030
+C
+src/ClassTest3.java,2\b\2bbba8f9dc8207a8f8f4d4e49505fc1b62d5120a
+D
+src/MethodTest1.java,b\8\b815505331a02d2fa6a0da54483747edadd05361
+G
+src/ParameterTest1.java,9\c\9cb17a545a266f9bd38668d1a8fa0e2ce79dce54
+G
+src/CallbyRefTest1.java,f\1\f165ef0ede83bf9615378b841c4b99e9da4bee81
