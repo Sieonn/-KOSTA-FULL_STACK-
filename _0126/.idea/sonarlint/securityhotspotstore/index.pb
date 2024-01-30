@@ -1,8 +1,6 @@
 
 F
 src/ArrayExam2_02.java,1\0\107132ca57d3c81918b0d7f4d5b53179614125c9
-E
-src/ArrayExam2_0.java,f\9\f92e0173abe8eb4f68c3f165d4affe87d94ef3b5
 F
 src/ArrayExam2_03.java,4\c\4c163e0fceb2b498e1a08b1dd3dc937db026304f
 F
@@ -13,8 +11,6 @@ F
 src/ArrayExam2_05.java,0\7\076c902279e7c29a4b4820aef5e70d7e37599d9f
 F
 src/ArrayExam2_06.java,6\7\67c0f9d7d92448becd7d5ef9b2fbf417dc3b9486
-D
-src/ArrayExam07.java,b\6\b6523cd4c7e2043189d9b8008bfa089b67fdfcad
 F
 src/ArrayExam2_07.java,6\d\6d8f0636257a164185e7413218a1e37e3ff43858
 F
