@@ -1,6 +1,6 @@
 
 S
-java:S1854"6Remove this useless assignment to local variable "m2".(–Çñï8ºÜåÉÕ1
+java:S1854"6Remove this useless assignment to local variable "m2".(–Çñï8ºÜåÉÕ1
 D
-java:S1481"'Remove this unused "m2" local variable.(–Çñï8¼ÜåÉÕ1
-L	java:S106"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8ŠâäÉÕ1
+java:S1481"'Remove this unused "m2" local variable.(–Çñï8¼ÜåÉÕ1
+L	java:S106"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8ŠâäÉÕ1
