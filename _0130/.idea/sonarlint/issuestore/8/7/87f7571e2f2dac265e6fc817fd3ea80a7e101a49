@@ -1,7 +1,12 @@
 
-L	java:S106"+Replace this use of System.out by a logger.(•®ÌŒøÿÿÿÿ8¡ôŒÀÕ1
-G	java:S106"+Replace this use of System.out by a logger.(î“«8¢ôŒÀÕ1
-L	java:S106"+Replace this use of System.out by a logger.(­€¾ûÿÿÿÿ8£ôŒÀÕ1
-L	java:S106"+Replace this use of System.out by a logger.(Ğ°çõşÿÿÿÿ8¤ôŒÀÕ1
+X	java:S125"<This block of commented-out lines of code should be removed.(„’şÕ8ºæ—ÉÕ1
+X
+java:S1854"6Remove this useless assignment to local variable "p4".(°ĞšŸúÿÿÿÿ8¾æ—ÉÕ1
+I
+java:S1481"'Remove this unused "p4" local variable.(°ĞšŸúÿÿÿÿ8Àæ—ÉÕ1
+L	java:S106"+Replace this use of System.out by a logger.(•®ÌŒøÿÿÿÿ8Âæ—ÉÕ1
+G	java:S106 "+Replace this use of System.out by a logger.(î“«8Äæ—ÉÕ1
+L	java:S106""+Replace this use of System.out by a logger.(­€¾ûÿÿÿÿ8Ææ—ÉÕ1
+L	java:S106#"+Replace this use of System.out by a logger.(Ğ°çõşÿÿÿÿ8Èæ—ÉÕ1
 C
-java:S1481"&Remove this unused "n" local variable.(Åİ¤Ÿ8¤ôŒÀÕ1
+java:S1481%"&Remove this unused "n" local variable.(Åİ¤Ÿ8Êæ—ÉÕ1
