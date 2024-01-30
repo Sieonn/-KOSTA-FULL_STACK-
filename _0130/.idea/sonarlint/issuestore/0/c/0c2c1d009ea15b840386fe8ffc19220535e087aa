@@ -1,7 +1,7 @@
 
-L	java:S106"+Replace this use of System.out by a logger.(ïÊˆŞûÿÿÿÿ8şÅñÁÕ1
-G	java:S106"+Replace this use of System.out by a logger.(äÜ«Î8ÿÅñÁÕ1
-L	java:S106"+Replace this use of System.out by a logger.(ßëüşúÿÿÿÿ8€ÆñÁÕ1
-L	java:S106"+Replace this use of System.out by a logger.(å‘Ø©üÿÿÿÿ8ƒÆñÁÕ1
+L	java:S106"+Replace this use of System.out by a logger.(ïÊˆŞûÿÿÿÿ8µ£»ÂÕ1
+G	java:S106"+Replace this use of System.out by a logger.(äÜ«Î8¶£»ÂÕ1
+L	java:S106"+Replace this use of System.out by a logger.(ßëüşúÿÿÿÿ8·£»ÂÕ1
+L	java:S106"+Replace this use of System.out by a logger.(å‘Ø©üÿÿÿÿ8¹£»ÂÕ1
 W
-java:S2209"5Change this instance-reference to a static reference.(å‘Ø©üÿÿÿÿ8„ÆñÁÕ1
+java:S2209"5Change this instance-reference to a static reference.(å‘Ø©üÿÿÿÿ8¹£»ÂÕ1
