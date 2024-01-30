@@ -1,6 +1,7 @@
 
+]	java:S125"<This block of commented-out lines of code should be removed.(õËš‘øÿÿÿÿ8ÇØ‹ÊÕ1
 S
-java:S1854"6Remove this useless assignment to local variable "m2".(–Çñï8ºÜåÉÕ1
+java:S1854("6Remove this useless assignment to local variable "m2".(–Çñï8ÈØ‹ÊÕ1
 D
-java:S1481"'Remove this unused "m2" local variable.(–Çñï8¼ÜåÉÕ1
-L	java:S106"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8ŠâäÉÕ1
+java:S1481("'Remove this unused "m2" local variable.(–Çñï8ÉØ‹ÊÕ1
+L	java:S106)"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8ÉØ‹ÊÕ1
