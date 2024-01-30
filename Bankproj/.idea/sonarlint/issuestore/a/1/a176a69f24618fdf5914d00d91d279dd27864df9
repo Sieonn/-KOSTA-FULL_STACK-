@@ -1,0 +1,17 @@
+
+V
+java:S1854"9Remove this useless assignment to local variable "money".(êâ±Í8£æ¹ÌÕ1
+Z
+java:S1854"8Remove this useless assignment to local variable "name".(ä‹Å üÿÿÿÿ8€õ¸ÌÕ1
+X
+java:S1854"6Remove this useless assignment to local variable "id".(è„Ã±üÿÿÿÿ8âº»ÌÕ1
+I
+java:S1481"'Remove this unused "id" local variable.(è„Ã±üÿÿÿÿ8õ¸ÌÕ1
+K
+java:S1481")Remove this unused "name" local variable.(ä‹Å üÿÿÿÿ8¹˜ºÌÕ1
+G
+java:S1481"*Remove this unused "money" local variable.(êâ±Í8°Œ¼ÌÕ1
+X
+java:S1854("6Remove this useless assignment to local variable "id".(è„Ã±üÿÿÿÿ8™ÛÂÌÕ1
+I
+java:S1481("'Remove this unused "id" local variable.(è„Ã±üÿÿÿÿ8šÛÂÌÕ1
