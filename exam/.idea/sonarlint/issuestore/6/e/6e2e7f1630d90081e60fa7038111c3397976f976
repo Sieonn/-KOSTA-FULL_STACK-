@@ -1,0 +1,20 @@
+
+i
+java:S1192,"GDefine a constant instead of duplicating this literal ", VOL:" 3 times.(ÖÍ°ûÿÿÿÿ8ÖìıëÕ1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Õ–¾¤øÿÿÿÿ8×ìıëÕ1
+p	java:S116"URename this field "MAX_VOLUME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùÀ¼]8äìıëÕ1
+q	java:S116"URename this field "MIN_VOLUME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§ñ…8äìıëÕ1
+q	java:S116"VRename this field "MAX_CHANNEL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù÷è8äìıëÕ1
+r	java:S116	"VRename this field "MIN_CHANNEL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(îÀº¿8äìıëÕ1
+=
+java:S1170"!Make this final field static too.(ùÀ¼]8äìıëÕ1
+>
+java:S1170"!Make this final field static too.(§ñ…8åìıëÕ1
+=
+java:S1170"!Make this final field static too.(Ù÷è8åìıëÕ1
+>
+java:S1170	"!Make this final field static too.(îÀº¿8åìıëÕ1
+X	java:S125"<This block of commented-out lines of code should be removed.(â‰åà8éìıëÕ1
+]	java:S125$"<This block of commented-out lines of code should be removed.(šòõ‡ùÿÿÿÿ8„€şëÕ1
+L
+java:S1197("*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ8íìıëÕ1
