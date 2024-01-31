@@ -8,7 +8,7 @@ public class Exam22 {
             char ch = str.charAt(i);
             if (!(ch >= '0' && ch <= '9')) {
                 return false;
-                break;
+//                break;
             }
         }
 

@@ -17,3 +17,5 @@ I
 src/chapter06/Exam01.java,a\d\ad952fd083075a19db67c29eb55b636d96055e65
 I
 src/chapter06/Exam02.java,b\1\b1859e08c9361cd40ff8d31a24011518d6a6315c
+I
+src/chapter03/Exam10.java,6\4\64915f8c506e97dcbb7d8ffa40be8c10c82c494a
