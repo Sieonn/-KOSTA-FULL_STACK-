@@ -1,0 +1,7 @@
+
+j
+java:S1104"MMake k a static final constant or non-public and provide accessors if needed.(½ÛÄâ8Ö¨˜õÕ1
+m
+java:S1450"PRemove the "x" field and declare it as a local variable in the relevant methods.(ÇœÁæ8é½ õÕ1
+B
+java:S1068"%Remove this unused "x" private field.(ÇœÁæ8³Ê—õÕ1

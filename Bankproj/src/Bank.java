@@ -23,7 +23,7 @@ public class Bank {
         System.out.print("이름: ");
         String name = sc.nextLine();
         System.out.print("입금액:");
-        int money = sc.nextInt();
+        int money = Integer.parseInt();
         //1, Account 객체 만들기
         //2. 생성된 객체를 accs에 담기
 

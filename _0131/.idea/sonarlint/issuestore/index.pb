@@ -9,3 +9,7 @@ E
 src/InheritTest3.java,1\3\13c8d42082a2613cfd320e55ec224077302fe639
 E
 src/InheritTest4.java,9\1\91530de78224856feb498472d6ddb256b5d808eb
+C
+src/pac/MyTest.java,3\a\3a525fb8784280dafe4088fb08eb19acd9e11249
+E
+src/PackageTest1.java,1\6\165c6210475ea3eb73ceb751d3419c1dacc288fb
