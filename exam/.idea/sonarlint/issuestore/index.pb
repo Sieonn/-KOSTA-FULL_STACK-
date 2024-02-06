@@ -19,3 +19,9 @@ I
 src/chapter06/Exam02.java,b\1\b1859e08c9361cd40ff8d31a24011518d6a6315c
 I
 src/chapter03/Exam10.java,6\4\64915f8c506e97dcbb7d8ffa40be8c10c82c494a
+I
+src/chapter08/Exam02.java,3\2\32ae60c774bf7b32e6a14d42da456278d66fa6d2
+I
+src/chapter08/Exam08.java,3\4\346de30740d94db1b14b5ca25af5a9899dc37c16
+I
+src/chapter08/Exam09.java,c\8\c89c80f5b5521069de7ebfc86f5f2b8d7deb7673

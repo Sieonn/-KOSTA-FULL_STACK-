@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f705bbeb-6a93-4867-8cd3-9d544ce46fbf" name="Changes" comment="" />
+    <list default="true" id="f705bbeb-6a93-4867-8cd3-9d544ce46fbf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Bankproj/.idea/sonarlint/issuestore/c/a/ca01c17201fdc23dfb26218912f2dd37c1e471cb" beforeDir="false" afterPath="$PROJECT_DIR$/Bankproj/.idea/sonarlint/issuestore/c/a/ca01c17201fdc23dfb26218912f2dd37c1e471cb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bankproj/src/exp/BankError.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bankproj/src/exp/BankError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bankproj/src/exp/BankException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bankproj/src/exp/BankException.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +20,12 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -55,9 +65,10 @@
     "Application.WhileTest1.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "11",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/SE/java_workspace/0126",
+    "last_opened_file_path": "C:/SE/java_study",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -97,6 +108,7 @@
       <workItem from="1706145573372" duration="365000" />
       <workItem from="1706145950478" duration="21919000" />
       <workItem from="1706227485648" duration="5964000" />
+      <workItem from="1707199811036" duration="42000" />
     </task>
     <servers />
   </component>

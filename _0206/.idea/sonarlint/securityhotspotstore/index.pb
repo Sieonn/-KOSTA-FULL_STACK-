@@ -1,6 +1,4 @@
 
-=
-src/Main.java,9\2\924f089edb4af5ee45c8a9d1129cd28e2b368138
 G
 src/ExceptionTest1.java,1\0\10766c5c328103914b36e1af5225bdc17bb48640
 G
@@ -13,8 +11,6 @@ G
 src/ExceptionTest5.java,3\f\3f33d6d455b7439ecc20e97fb6fbb224eb7b678a
 G
 src/ExceptionTest6.java,4\8\481a947afeb488f2a2af4c8feaf775c851625cec
-C
-src/Exception7.java,3\b\3b8e737ef39a9ca7feb5aa77e66c717b086192dc
 G
 src/ExceptionTest7.java,7\5\759433d395ded8c69aeb7182a66a3a79e73de197
 G

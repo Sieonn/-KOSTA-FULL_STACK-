@@ -1,9 +1,12 @@
+import exp.BankError;
+import exp.BankException;
+
 public class Account {
     String id;
     String name;
     int balance;
 
-//    String info() { //호출한 애한테 주는 데이터 타입 > 호출한 애한테 문자열을 주겠다,
+    //    String info() { //호출한 애한테 주는 데이터 타입 > 호출한 애한테 문자열을 주겠다,
 //        return "계좌번호: " + id + ", 이름: " + name + ", 잔액: " + balance;
 //    }
     String info() {
@@ -12,26 +15,43 @@ public class Account {
 
     //리턴하지 않아도 되는 값
     void deposit(int money) {
-        if(money>0) balance += money;
+        if (money > 0) balance += money;
 
     }
+
     void withdraw(int money) {
-        if(balance>=money)
-            balance -= money;
+        if (balance >= money)
+            this.balance -= money;
     }
 
-Account() {
-}
+    public Account() {
+    }
 
-Account(String id, String name, int balance) {
-    this.id = id;
-    this.name = name;
-    this.balance = balance;
-}
+    public Account(String id, String name, int balance) {
+        this.id = id;
+        this.name = name;
+        this.balance = balance;
+    }
 
-Account(String id, String name) {
-    this(id, name, 0);
+    public Account(String id, String name) {
+        this(id, name, 0);
 
+    }
+
+    public String info() {
+        return String.format("계좌번호:%s, 이름:%s, 잔액:%d, id, name, balance");
+    }
+
+    public void deposit(int money) {
+        if (money > 0) balance += money;
+    }
+
+    public void withdraw(int money) throws BankException {
+        if (balance < money) {
+            throw new BankException(BankError.OVERDRAWN);
+        }
+        balance -= money;
+    }
 }
 
 public static void main(String[] args) {
@@ -47,4 +67,4 @@ public static void main(String[] args) {
     acc1.withdraw(5000);
     System.out.println(acc1.info());
 }
-}
+

@@ -39,12 +39,12 @@ public class ExceptionTest7 {
             func();
             func2();
             func3();
-        } catch (Exception4 e4) {
-            System.out.println("func4의 대체처리");
-        } catch (Exception3 e2) {
+        } catch (Exception3 e4) {
             System.out.println("func2의 대체처리");
         } catch (Exception2 e2) {
             System.out.println("func의 대체처리");
+        } catch (Exception4 e2) {
+            System.out.println("func4의 대체처리");
         }
 
     }
