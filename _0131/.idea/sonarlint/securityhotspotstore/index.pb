@@ -13,3 +13,5 @@ C
 src/pac/MyTest.java,3\a\3a525fb8784280dafe4088fb08eb19acd9e11249
 E
 src/PackageTest1.java,1\6\165c6210475ea3eb73ceb751d3419c1dacc288fb
+=
+src/Test.java,a\8\a862b92d10f810e224187403c322cb8e01f5e244
