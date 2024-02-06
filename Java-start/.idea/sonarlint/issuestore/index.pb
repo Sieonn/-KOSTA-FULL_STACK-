@@ -21,3 +21,9 @@ F
 src/variable/Var6.java,1\2\1292729b915670832cbbe229c51975353ba9a76d
 F
 src/variable/Var7.java,d\1\d1f4791682dffa82c2178702fa3fa55fb5160efa
+D
+src/Exam/Exam01.java,a\d\adea9ecbfa845c64e0e7c53a1e542f3e7730b45f
+D
+src/Exam/Exam02.java,6\6\66450e142ad157446b43cf00b8164a617a16b810
+D
+src/Exam/VarEx3.java,a\3\a3d284b902edaf30c154ffdfee330724ab8b4cc8
