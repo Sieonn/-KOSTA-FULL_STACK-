@@ -37,3 +37,15 @@ J
 src/Exam/OperationEx3.java,b\d\bd893e7a90f2996129db48380013f5bb8d4b2292
 D
 src/Exam/EXam09.java,5\1\5194fba42031300a6488caaea68a9a4462c8ea34
+A
+src/comd/If1.java,d\e\deecf98f5d537b8ac82e6419af58fb592b77dd27
+A
+src/cond/If1.java,7\1\715abd9940b165b901626b28a5212fe697b2f206
+A
+src/cond/If2.java,9\e\9e8f88c4abb78c117633a4f315ce94b1a95d9cb8
+E
+src/cond/ㅑㄹ3.java,7\5\7562bc7751217e03b2d1e03f1ccaa654ee91f0b2
+A
+src/cond/If3.java,3\3\333ce5118687af9b9320edf166f61ea7f19a9775
+A
+src/cond/If5.java,0\1\01ee7d590942a3fe08a590d661bccd5344ce6454
