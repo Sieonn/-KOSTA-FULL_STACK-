@@ -25,3 +25,13 @@ I
 src/chapter08/Exam08.java,3\4\346de30740d94db1b14b5ca25af5a9899dc37c16
 I
 src/chapter08/Exam09.java,c\8\c89c80f5b5521069de7ebfc86f5f2b8d7deb7673
+I
+src/chapter09/Exam05.java,7\5\75faa4926105719f6340be3c724a5659e46d6255
+I
+src/chapter09/Exam06.java,d\f\dfc1caf8badfa124a07f5ed949dea1149a791397
+I
+src/chapter09/Exam07.java,3\1\3188b5fce7f35d9aa88fd3a01983205f93c4e5f2
+I
+src/chapter09/Exam09.java,7\e\7e0400e74c1f4ae447a6df2487b6d530c50ee7ef
+I
+src/chapter09/Exam10.java,7\5\75fe45297a27e06f0b44a4b0d7734c4c3f92a95d
