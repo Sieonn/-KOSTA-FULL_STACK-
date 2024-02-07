@@ -69,3 +69,11 @@ F
 src/cond/CondOpEx.java,6\0\603668729a4cdd8f739feed4d49990fba5e3dbc6
 H
 src/cond/CondEvenEx.java,3\8\38eae3e7f3c73dc17d2327c86516d7e1d9e49838
+E
+src/package-info.java,d\3\d3d2630fa83f97511dbec7555b2d4c6604052ea2
+F
+src/loop/while1_1.java,2\e\2e04a0c08cda267e73c5fc38088a0e1c17ea1db9
+F
+src/loop/While1_1.java,4\c\4c898a4732bf6f377ccacfc40a55a9d1e74f635d
+F
+src/loop/While1_2.java,2\2\227080d5cb016bf34b56fe071d6e30402bc3ca60
