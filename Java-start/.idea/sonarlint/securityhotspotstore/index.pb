@@ -35,3 +35,5 @@ J
 src/Exam/OperationEx2.java,b\8\b8818c8dd70712cf1cafaa3953ee5af0c750c51e
 J
 src/Exam/OperationEx3.java,b\d\bd893e7a90f2996129db48380013f5bb8d4b2292
+D
+src/Exam/EXam09.java,5\1\5194fba42031300a6488caaea68a9a4462c8ea34
