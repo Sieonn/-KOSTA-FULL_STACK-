@@ -27,7 +27,11 @@ D
 src/Exam/Exam02.java,6\6\66450e142ad157446b43cf00b8164a617a16b810
 D
 src/Exam/VarEx3.java,a\3\a3d284b902edaf30c154ffdfee330724ab8b4cc8
-A
-src/operator.java,e\8\e817c0eabd9c9111d2313b4606634a381700aab0
 K
 src/operator/Operator1.java,1\6\16f0c2694cd56fe6e3d2dd92c1e60059c173a8b1
+J
+src/Exam/OperationEx1.java,0\0\00d2186197c760b8429afa8bd075dfa22bd98ce4
+J
+src/Exam/OperationEx2.java,b\8\b8818c8dd70712cf1cafaa3953ee5af0c750c51e
+J
+src/Exam/OperationEx3.java,b\d\bd893e7a90f2996129db48380013f5bb8d4b2292
