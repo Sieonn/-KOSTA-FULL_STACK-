@@ -206,25 +206,25 @@ public class Bank {
         FileOutputStream fos = null;
         DataOutputStream dos = null;
         try {
-            fos =  new FileOutputStream("accs.bin");
+            fos = new FileOutputStream("accs.bin");
             dos = new DataOutputStream(fos);
             dos.writeInt(accs.size());
-            for(Account acc: accs.values()) {
-                if(acc instanceof SpecialAccount) {
+            for (Account acc : accs.values()) {
+                if (acc instanceof SpecialAccount) {
                     dos.writeChar('S');
                     dos.writeUTF(((SpecialAccount) acc).getGrade());
-                }else {
+                } else {
                     dos.writeChar('N');
                 }
                 dos.writeUTF(acc.getId());
                 dos.writeUTF(acc.getName());
                 dos.writeInt(acc.getBalance());
             }
-        } catch(IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             try {
-                if(dos !=null) dos.close();
+                if (dos != null) dos.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -232,7 +232,7 @@ public class Bank {
     }
 
     public void loadAccs() { // 계좌 목록 파일로부터 읽어오기
-        FileInputStream fis =null;
+        FileInputStream fis = null;
         DataInputStream dis = null;
         try {
             fis = new FileInputStream("accs.bin");
@@ -244,24 +244,24 @@ public class Bank {
             String id, name, grade = null;
             int balance;
             //2. 계좌구분 읽어오기(S or N)
-            for(int i =0; i<size; i++) {
+            for (int i = 0; i < size; i++) {
                 accSect = dis.readChar();
-                if(accSect=='S') {
-                    grade=dis.readUTF();
+                if (accSect == 'S') {
+                    grade = dis.readUTF();
                 }
-                id=dis.readUTF();
-                name=dis.readUTF();
-                balance=dis.readInt();
+                id = dis.readUTF();
+                name = dis.readUTF();
+                balance = dis.readInt();
 
-                if (accSect=='N') {
+                if (accSect == 'N') {
                     accs.put(id, new Account(id, name, balance));
-                }else accs.put(id,new SpecialAccount(id, name, balance, grade));
+                } else accs.put(id, new SpecialAccount(id, name, balance, grade));
             }
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
             try {
-                if(dis!= null) dis.close();
+                if (dis != null) dis.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -270,25 +270,25 @@ public class Bank {
     }
 
     public void storeAccs_txt() {
-    //    FileWriter, BufferedWriter, accs.txt
-    //    1001, 홍길동, 100000
-    //    1002, 김길동, 200000. VIP
-    //    1. FileWriter, BufferedWriter 선언과 초기화
-    //    2. 파일명으로 FileWriter생성
-    //    3. 생성된 FileWriter로 BufferedWriter 생성
-    //    4. 계좌의 목록에서 각 계좌를 가져와 각 항목을 , 구분자로 이어 하나의 문자열로 만들기
-    //    5. br를 이요하여 4에서 생성한 문자열 저장
-    //    6. 라인바꾸기: br.newLine()
-    //        7.예외처리 및 br close
+        //    FileWriter, BufferedWriter, accs.txt
+        //    1001, 홍길동, 100000
+        //    1002, 김길동, 200000. VIP
+        //    1. FileWriter, BufferedWriter 선언과 초기화
+        //    2. 파일명으로 FileWriter생성
+        //    3. 생성된 FileWriter로 BufferedWriter 생성
+        //    4. 계좌의 목록에서 각 계좌를 가져와 각 항목을 , 구분자로 이어 하나의 문자열로 만들기
+        //    5. br를 이요하여 4에서 생성한 문자열 저장
+        //    6. 라인바꾸기: br.newLine()
+        //        7.예외처리 및 br close
 
         BufferedWriter bw = null;
         try {
-            bw =  new BufferedWriter(new FileWriter("accs.txt"));
-            for(Account acc: accs.values()) {
+            bw = new BufferedWriter(new FileWriter("accs.txt"));
+            for (Account acc : accs.values()) {
                 String accStr = acc.getId();
                 accStr += "," + acc.getBalance();
-                if(acc instanceof SpecialAccount) {
-                    accStr += "," + ((SpecialAccount)acc).getGrade();
+                if (acc instanceof SpecialAccount) {
+                    accStr += "," + ((SpecialAccount) acc).getGrade();
                 }
                 bw.write(accStr);
                 bw.newLine();
@@ -297,13 +297,11 @@ public class Bank {
             e.printStackTrace();
         } finally {
             try {
-                if (bw!=null) bw.close();
-            } catch (IOException e ){
+                if (bw != null) bw.close();
+            } catch (IOException e) {
                 e.printStackTrace();
             }
         }
-
-
     }
 
     public void loadAccs_txt() {
@@ -311,7 +309,7 @@ public class Bank {
         try {
             br = new BufferedReader(new FileReader("accs.txt"));
             String accStr = null;
-            while((accStr = br.readLine())!=null) {
+            while ((accStr = br.readLine()) != null) {
                 String[] cols = accStr.split(",");
                 String id = cols[0];
                 String name = cols[1];
@@ -327,7 +325,7 @@ public class Bank {
             e.printStackTrace();
         } finally {
             try {
-                if(br!=null) br.close();
+                if (br != null) br.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }
