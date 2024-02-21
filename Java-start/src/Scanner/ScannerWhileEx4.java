@@ -13,14 +13,15 @@ public class ScannerWhileEx4 {
         while (true) {
             System.out.println("1: 상품입력, 2: 결제, 3: 프로그램 종료");
             sel = scanner.nextInt();
+            
             if (sel == 1) {
+//                scanner.nextline(); //이전에 입력된 개행문자 제거
+                
                 System.out.print("상품명을 입력하세요.:");
                 name = scanner.nextLine();
-                scanner.nextLine();
 
                 System.out.print("상품의 가격을 입력하세요:");
                 price = scanner.nextInt();
-                scanner.nextLine();
 
                 System.out.print("구매 수량을 입력하세요:");
                 count = scanner.nextInt();
@@ -28,7 +29,7 @@ public class ScannerWhileEx4 {
 
                 System.out.println("상품명" + name + "가격:" + price + "수량:" + count + "합계:" + price*count);
             } else if (sel==2) {
-                System.out.print("총 비용:"+sum);
+                System.out.println("총 비용:"+sum);
 
             } else {
                 System.out.println("프로그램을 종료합니다.");
