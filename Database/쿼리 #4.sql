@@ -1,18 +1,19 @@
 -- join
--- CREATE TABLE test1(
--- A VARCHAR(10),
--- B VARCHAR(20));
+CREATE TABLE test1(
+A VARCHAR(10),
+B VARCHAR(20));
 -- test1
 
 
 CREATE TABLE test2(
-A Vtest2ARCHAR(10),
+A VARCHAR(10),
 C VARCHAR(20),
 B VARCHAR(20));
-test2
+
 
 CREATE TABLE test2(A VARCHAR(10), B VARCHAR(20), C VARCHAR(20));
 
+DROP TABLE test1;
 INSERT INTO test1 VALUES('a1','b1');
 INSERT INTO test1 VALUES('a2','b2');
 
@@ -20,6 +21,11 @@ INSERT INTO test2 VALUES('a3','c3','d3');
 INSERT INTO test2 VALUES('a4','c4','d4');
 INSERT INTO test2 VALUES('a5','c5','d5');
 
+SELECT *
+FROM test1 JOIN test2
+ORDER BY 1;
+
+-- test1과 test2를 함께 출력하기
 SELECT *
 FROM test1 JOIN test2
 ORDER BY 1;
@@ -34,12 +40,26 @@ FROM emp e JOIN dept d
 ON e.DEPTNO=d.DEPTNO;
 
 -- student, department 테이블을 이용하여 학번, 이름, 학과명 조회
+SELECT s.studno, s.name, d.dname
+FROM student s JOIN department d
+on s.deptno1=d.deptno;
+
+-- 위에다가 교수명까지 추가한다면?
+SELECT s.studno, s.name, d.dname, p.name
+FROM student s JOIN department d
+ON s.deptno1=d.deptno
+JOIN professor p
+ON s.profno=p.profno;
+
+
 SELECT s.studno, s.NAME, d.dname, p.name
 FROM student s JOIN department d 
 ON s.deptno1=d.DEPTNO
 JOIN professor p
 ON s.profno=p.profno;
 
+
+-- 이런식으로 and로 묶어서도 가능
 SELECT s.studno, s.name, d.dname, p.name
 FROM student s, department d, professor p
 WHERE s.deptno1=d.deptno AND s.profno=p.profno;
