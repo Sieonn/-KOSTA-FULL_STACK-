@@ -95,7 +95,7 @@ SELECT * FROM professor WHERE hpage IS NOT NULL;
 
 -- emp 테이블에서 sal이 1000보다 크고
 -- comm이 1000보다 작거나 없는 직원의 사번, 이름, 급여, 커미션,조회
-SELECT empno, ename, sal, comm FROM emp WHERE sal > 1000 AND (comm < 0 OR comm IS NULL)
+SELECT empno, ename, sal, comm FROM emp WHERE sal > 1000 AND (comm < 0 OR comm IS NULL);
 
 -- emp 테이블에서 각 사원의 사번, 이름, 급여+ 커미션 조회
 SELECT empno, ename, sal+comm FROM emp WHERE comm IS NOT NULL;

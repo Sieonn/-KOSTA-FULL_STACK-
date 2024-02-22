@@ -51,6 +51,7 @@ SELECT LENGTH('스티븐');
 SELECT LENGTH(email) FROM professor;
 SELECT email, INSTR(email,'@') FROM professor;
 
+-- @이후 이메일 출력
 SELECT substr(email, INSTR(email,'@')+1) FROM professor;
 
 SELECT email,
@@ -58,7 +59,8 @@ substr(email, INSTR(email,'@')+1),
  LENGTH(substr(email, INSTR(email,'@')+1)) length 
  FROM professor;
  
- SELECT email,
+ SELECT 
+ email,
  INSERT(email, INSTR(email, '@')+1, LENGTH( SUBSTR(email, INSTR(email,'@')+1)), 'kosta.com') AS email
  FROM professor;
  
