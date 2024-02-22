@@ -65,11 +65,23 @@ FROM student s, department d, professor p
 WHERE s.deptno1=d.deptno AND s.profno=p.profno;
 
 -- student, professor 테이블을 이용하여 학번, 이름, 담당교수명 조회
+-- left로 null값도 같이 출력합니다.
+SELECT s.studno, s.name, p.name
+FROM student s left JOIN professor p
+ON s.profno=p.profno
+ORDER BY 3;
+
 SELECT s.*,p.name
 FROM student s LEFT JOIN professor p
 ON s.profno=p.profno;
 
 -- student, department 테이블을 이용하여, 학번, 이름, 학년, 제1전공과명, 제2전공과명 조회
+SELECT s.studno, s.name, s.grade, d.dname 주전공, d2.dname 부전공
+FROM student s left JOIN department d
+ON s.deptno1 = d.deptno
+LEFT JOIN department d2
+ON s.deptno2=d2.deptno;
+
 SELECT s.studno, s.name, s.grade, d1.dname 주전공, d2.dname 부전공
 FROM student s JOIN department d1
 ON s.deptno1=d1.deptno
@@ -77,6 +89,10 @@ left JOIN department d2
 ON s.deptno2=d2.deptno;
 
 -- student,exam_01 테이블을 이용하여 학번, 이름, 학년, 점수 조회
+SELECT s.studno, s.name, s.grade, ex1.total
+FROM student s JOIN exam_01 ex1
+ON s.studno=ex1.studno;
+
 SELECT s.studno, s.name, s.grade, e.total
 FROM student s JOIN exam_01 e
 ON s.studno=e.studno;
@@ -109,9 +125,9 @@ FROM emp2 e2, p_grade p
 WHERE e2.POSITION=p.position AND e2.pay>p.e_pay;
 
 -- emp2, p_grade 테이블을 이용하여 이름, 지급, 나이, 본인의 나이에 해당하는 예상 직급 조회
-SELECT e2.NAME, e2.POSITION, format(DATEDIFF(CURDATE(),e2.BIRTHDAY)/365,0) AS 나이, p.position
+SELECT e2.NAME, e2.POSITION, format(DATEDIFF(CURDATE(),e2.BIRTHDAY)/365,0) 나이, p.position
 FROM emp2 e2, p_grade p
-WHERE 나이 BETWEEN p.s_age AND p.e_age;
+WHERE format(DATEDIFF(CURDATE(),e2.BIRTHDAY)/365,0) BETWEEN p.s_age AND p.e_age;
 
 
 
