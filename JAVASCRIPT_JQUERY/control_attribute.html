@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      window.onload = function () {
+        var image = document.getElementById("image");
+        image.src = "cat.jpg";
+        image.width = 300;
+        image.height = 200;
+
+        var lis = document.querySelector("li");
+        for (li of lis) {
+          console.log(li.getAttribyte("data-value"));
+        }
+        document.body.setAttribute("data-body", "hidden body data");
+      };
+    </script>
+  </head>
+  <body>
+    <img src="" alt="" id="image" />
+    <ul>
+      <li data-value="orange">오렌지</li>
+      <li data-value="banana">바나나</li>
+      <li data-value="apple">사과</li>
+    </ul>
+  </body>
+</html>
