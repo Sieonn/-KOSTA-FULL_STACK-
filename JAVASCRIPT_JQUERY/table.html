@@ -21,8 +21,8 @@
     */
       window.onload = function () {
         // 1. id="age-table"인 테이블
-        let ageTable1 = document.getElementById("age-table");
-        console.log(ageTable1);
+        let table = document.getElementById("age-table");
+        document.querySelector("#age-table");
 
         // 2. 테이블 내의 label 요소 모두(총 3개)
         table.getElementsByTagName("label");
@@ -32,10 +32,16 @@
         table.rows[0].cells[0];
         table.querySelector("td");
         // 4. name="search"인 form
+        let form = document.getElementsByName("search")[0];
+        document.querySelector("form[name='search']");
         // 5. 폼의 첫 번째 input
+        form.querySelector("input");
+        form.getElementsByTagName("input")[0];
         // 6. 폼의 마지막 input
-        let ageTable4 = document.getElementsByName("search");
-        console.log(ageTable4);
+        let inputs = form.getElementsByTagName("input");
+        inputs[inputs.length - 1];
+        let lastInput = form.querySelector("input:last-child");
+        console.log(lastInput);
       };
     </script>
   </head>
