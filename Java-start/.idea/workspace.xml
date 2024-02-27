@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="02dc5a74-d6cb-454b-b7f2-f91a29146243" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Scanner/ScannerWhileEx2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Scanner/ScannerWhileEx3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Scanner/ScannerWhileEx4.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2bhqEtHiuLNCnEJr5zyAFG7ELud" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Casting1.executor": "Run",
+    "Application.Casting2.executor": "Run",
+    "Application.Casting3.executor": "Run",
+    "Application.Casting4.executor": "Run",
+    "Application.CommentJava.executor": "Run",
+    "Application.CondEvenEx.executor": "Run",
+    "Application.CondOpEx.executor": "Run",
+    "Application.DistanceEx.executor": "Run",
+    "Application.EXam09.executor": "Run",
+    "Application.Exam01.executor": "Run",
+    "Application.Exam02.executor": "Run",
+    "Application.ExchangeRateEx.executor": "Run",
+    "Application.ForEx2.executor": "Run",
+    "Application.GradeSwitchEx.executor": "Run",
+    "Application.HelloJava.executor": "Run",
+    "Application.HelloJava2.executor": "Run",
+    "Application.If1.executor": "Run",
+    "Application.If2.executor": "Run",
+    "Application.If3.executor": "Run",
+    "Application.If5.executor": "Run",
+    "Application.MoveRateEx.executor": "Run",
+    "Application.NestedEx1.executor": "Run",
+    "Application.NestedEx2.executor": "Run",
+    "Application.OperationEx1.executor": "Run",
+    "Application.OperationEx2.executor": "Run",
+    "Application.OperationEx3.executor": "Run",
+    "Application.Operator1.executor": "Run",
+    "Application.Scanner1.executor": "Run",
+    "Application.Scanner2.executor": "Run",
+    "Application.Scanner3.executor": "Run",
+    "Application.ScannerEx1.executor": "Run",
+    "Application.ScannerEx2.executor": "Run",
+    "Application.ScannerEx3.executor": "Run",
+    "Application.ScannerEx4.executor": "Run",
+    "Application.ScannerEx5.executor": "Run",
+    "Application.ScannerWhile1.executor": "Run",
+    "Application.ScannerWhile2.executor": "Run",
+    "Application.ScannerWhile3.executor": "Run",
+    "Application.ScannerWhileEx1.executor": "Run",
+    "Application.ScannerWhileEx2.executor": "Run",
+    "Application.ScannerWhileEx3.executor": "Run",
+    "Application.ScannerWhileEx4.executor": "Run",
+    "Application.ScoreEx.executor": "Run",
+    "Application.Switch2.executor": "Run",
+    "Application.Var1.executor": "Run",
+    "Application.Var2.executor": "Run",
+    "Application.Var3.executor": "Run",
+    "Application.Var5.executor": "Run",
+    "Application.Var6.executor": "Run",
+    "Application.Var7.executor": "Run",
+    "Application.VarEx3.executor": "Run",
+    "Application.While1_1.executor": "Run",
+    "Application.While1_2.executor": "Run",
+    "Application.WhileEx1.executor": "Run",
+    "Application.WhileEx2.executor": "Run",
+    "Application.WhileEx3.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/SE/java_study/Java-start",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.ScannerWhileEx4">
+    <configuration name="HelloJava" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HelloJava" />
+      <module name="Java-start" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScannerWhileEx1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Scanner.ScannerWhileEx1" />
+      <module name="Java-start" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Scanner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScannerWhileEx4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Scanner.ScannerWhileEx4" />
+      <module name="Java-start" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Scanner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Var1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="variable.Var1" />
+      <module name="Java-start" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="variable.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Var7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="variable.Var7" />
+      <module name="Java-start" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="variable.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ScannerWhileEx4" />
+        <item itemvalue="Application.HelloJava" />
+        <item itemvalue="Application.ScannerWhileEx1" />
+        <item itemvalue="Application.Var7" />
+        <item itemvalue="Application.Var1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-11.0.22-corretto-11.0.22-f644763e9732-4a89cc43" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="02dc5a74-d6cb-454b-b7f2-f91a29146243" name="Changes" comment="" />
+      <created>1706677552002</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706677552002</updated>
+      <workItem from="1706677553261" duration="695000" />
+      <workItem from="1707195582028" duration="7939000" />
+      <workItem from="1707298402721" duration="1861000" />
+      <workItem from="1707300903435" duration="5726000" />
+      <workItem from="1707351661583" duration="167000" />
+      <workItem from="1707798770007" duration="1091000" />
+      <workItem from="1707818854765" duration="3295000" />
+      <workItem from="1707872575807" duration="47000" />
+      <workItem from="1707901108607" duration="6054000" />
+      <workItem from="1707987703660" duration="249000" />
+      <workItem from="1707987973698" duration="1432000" />
+      <workItem from="1708338994274" duration="2139000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
