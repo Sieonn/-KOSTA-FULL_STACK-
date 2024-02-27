@@ -1,53 +1,85 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-    <head>
-        <script>
+  <head>
+    <script>
+      /*
 // 아래 조건에 맞는 요소는 어떻게 찾을 수 있을까?            
 // 1. id="age-table"인 테이블
 // 2. 테이블 내의 label 요소 모두(총 3개)
 // 3. 테이블 내의 첫 번째 td(Age가 적힌 곳)
 // 4. name="search"인 form
 // 5. 폼의 첫 번째 input
-// 6. 폼의 마지막 input            
-        </script>
-    </head>
-<body>
-  <form name="search">
-    <label>Search the site:
-      <input type="text" name="search">
-    </label>
-    <input type="submit" value="Search!">
-  </form>
+// 6. 폼의 마지막 input    */
 
-  <hr>
+      /*
+    querySelector(CSS 선택자) -1
+    querySelectorAll(CSS 선택자) -n
+    getElementById(id) -1
+    getElementByName(name) -n
+    getElementByTagName(tag) -n ex: document.getElementByTagName('h1')
+    getElementByClassName(class) -n
+    */
+      window.onload = function () {
+        // 1. id="age-table"인 테이블
+        let ageTable1 = document.getElementById("age-table");
+        console.log(ageTable1);
 
-  <form name="search-person">
-    Search the visitors:
-    <table id="age-table">
-      <tr>
-        <td>Age:</td>
-        <td id="age-list">
-          <label>
-            <input type="radio" name="age" value="young">less than 18</label>
-          <label>
-            <input type="radio" name="age" value="mature">18-50</label>
-          <label>
-            <input type="radio" name="age" value="senior">more than 50</label>
-        </td>
-      </tr>
+        // 2. 테이블 내의 label 요소 모두(총 3개)
+        table.getElementsByTagName("label");
+        document.querySelectorAll("#age-table label");
+        // 3. 테이블 내의 첫 번째 td(Age가 적힌 곳)
+        table.getElementsByTagName("td")[0];
+        table.rows[0].cells[0];
+        table.querySelector("td");
+        // 4. name="search"인 form
+        // 5. 폼의 첫 번째 input
+        // 6. 폼의 마지막 input
+        let ageTable4 = document.getElementsByName("search");
+        console.log(ageTable4);
+      };
+    </script>
+  </head>
+  <body>
+    <form name="search">
+      <label
+        >Search the site:
+        <input type="text" name="search" />
+      </label>
+      <input type="submit" value="Search!" />
+    </form>
 
-      <tr>
-        <td>Additionally:</td>
-        <td>
-          <input type="text" name="info[0]">
-          <input type="text" name="info[1]">
-          <input type="text" name="info[2]">
-        </td>
-      </tr>
+    <hr />
 
-    </table>
+    <form name="search-person">
+      Search the visitors:
+      <table id="age-table">
+        <tr>
+          <td>Age:</td>
+          <td id="age-list">
+            <label>
+              <input type="radio" name="age" value="young" />less than 18</label
+            >
+            <label>
+              <input type="radio" name="age" value="mature" />18-50</label
+            >
+            <label>
+              <input type="radio" name="age" value="senior" />more than
+              50</label
+            >
+          </td>
+        </tr>
 
-    <input type="submit" value="Search!">
-  </form>
-</body>
+        <tr>
+          <td>Additionally:</td>
+          <td>
+            <input type="text" name="info[0]" />
+            <input type="text" name="info[1]" />
+            <input type="text" name="info[2]" />
+          </td>
+        </tr>
+      </table>
+
+      <input type="submit" value="Search!" />
+    </form>
+  </body>
 </html>
