@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let arr = [10, 20];
+      arr.push(30);
+      console.log(arr[2]);
+      arr[0] = 100;
+      console.log(arr.length);
+
+      let marr = [
+        10,
+        "hong",
+        { value: 50 },
+        function () {
+          console.log("lalala");
+        },
+      ];
+      console.log(marr[0]);
+      console.log(marr[1]);
+      console.log(marr[2].value);
+      marr[3]();
+    </script>
+  </head>
+  <body></body>
+</html>

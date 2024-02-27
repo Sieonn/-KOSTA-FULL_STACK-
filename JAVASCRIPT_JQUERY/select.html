@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      window.onload = function () {
+        //let header = document.getElementById("header");
+        let header = document.querySelector("#header");
+        header.style.color = "yellow";
+        header.style.background = "red";
+        header.innerHTML = "From Javascript";
+
+        let header1 = document.querySelectorAll("h1");
+        for(h of header1){
+            h.style.color = "blue";
+            h.style.background="skyblue";
+        //쿼리셀렉트는 제일 앞에있는것 하나만 가져옵니다.
+        }  //SelectotAll을 하려면 for문을 통해서 스타일을 적용해 줍니다.
+        
+    };
+    </script>
+  </head>
+  <body>
+    <h2 id="header">Header</h1>
+    <h2 id="header">Header</h1>
+
+    <h1>Header</h1>
+    <h1>Header</h1>
+    <h1>Header</h1>
+  </body>
+</html>

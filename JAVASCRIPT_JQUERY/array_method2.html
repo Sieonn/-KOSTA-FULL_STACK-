@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let arr1 = [
+        { name: "hong", age: 20 },
+        { name: "song", age: 30 },
+        { name: "gong", age: 40 },
+      ];
+      //for문
+      for (per of arr1) {
+        console.log(`이름:${per.name}, 나이:${per.age}`);
+      }
+      //배열이 가지고 있는 method
+      //forEach는 매개변수가 3가지로 정해졌는데 사용하지 않는 것은 생략가능.
+      arr1.forEach(function (item, index, arr) {
+        //arr1.forEach(function (item, index) 같이 안쓰는 것은 생략할 수 있습니다.
+        console.log(`순번:${index + 1},이름:${item.name}, 나이:${item.age}`);
+      });
+
+      let song = arr1.find(function (item) {
+        return item.name == "song";
+      });
+
+      //find는 이미 찾았으면 나머지는 무시한다. 출력해버림
+      //let song = arr1.find(item=>item.age==30)
+      console.log(song);
+
+      //let age30 = arr1.filter(item=>item.age>=30)
+      let age30 = arr1.filter(function (item) {
+        return item.age >= 30;
+      });
+      //filter는 전체 스켄해서 출력
+
+      console.log(age30);
+
+      let arr2 = [
+        { kor: 80, eng: 80, math: 80 },
+        { kor: 70, eng: 70, math: 70 },
+        { kor: 90, eng: 90, math: 90 },
+      ];
+      //map은 각각의 데이터를 가공하는 것입니다.
+      let avgs = arr2.map(function (item) {
+        return (item.kor + item.eng + item.math) / 3;
+      });
+      //let avgs = arr2.map((item)=>(item.kor+item.eng+item.math)/3)
+      console.log(avgs);
+    </script>
+  </head>
+  <body></body>
+</html>

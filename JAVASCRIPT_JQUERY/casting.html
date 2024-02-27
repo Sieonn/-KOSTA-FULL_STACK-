@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var value = true;
+      console.log(typeof value);
+
+      value = String(value);
+      console.log(typeof value);
+
+      var n = 20;
+      console.log(typeof n);
+      n = String(n);
+      console.log(typeof n);
+
+      //number
+      var str = "123n";
+      console.log(typeof str);
+      str = Number(str);
+      console.log(typeof str);
+      console.log(str);
+      value = true;
+      console.log(typeof value);
+      value = Number(value);
+      console.log(typeof value);
+      console.log(value);
+
+      //boolean
+      //0, null, undefined, NaN, "" => false
+      var b = Boolean("");
+      console.log(b);
+    </script>
+  </head>
+  <body></body>
+</html>

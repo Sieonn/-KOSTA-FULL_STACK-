@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let arr = ["I", "go", "home"];
+      //arr.push(...items) - 맨 끝에 요소 추가
+      //arr.pop() -맨끝 요소 제거
+      //arr.shift() - 맨 앞 요소 제거
+      //arr.unshift() - 맨 앞에 요소 추가
+      //delete arr[1];
+      //  console.log(arr);
+      //  console.log(arr.length);
+      arr.splice(1, 1); //1번째 부터 1개 삭제
+      console.log(arr);
+      console.log(arr.length);
+
+      let arr2 = [10, 20, 30, 40, 50, 60];
+      arr2.splice(2, 2, 100, 200);
+      console.log(arr2);
+
+      let arr3 = [10, 20, 30, 40, 50, 60];
+      let subArr = arr3.slice(1, 3); //1번째부터(3-1번쨰를 가져온다.)
+      console.log(subArr);
+      let subArr2 = arr3.slice(-2);
+      console.log(subArr2);
+
+      let tarr1 = [1, 2, 3];
+      let tarr2 = [4, 5, 6];
+      //let totarr = tarr1 + tarr2;
+      let totarr = [...tarr1, ...tarr2];
+      console.log(totarr);
+      let totarr2 = tarr2.concat(tarr2);
+      console.log(totarr2);
+      let totarr3 = tarr1.concat([5, 6, 7], [10, 20], 30);
+      console.log(totarr3);
+
+      arr3.forEach(function (item, index, arr) {
+        console.log(item);
+      });
+      for (item of arr3) {
+        console.log(item);
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

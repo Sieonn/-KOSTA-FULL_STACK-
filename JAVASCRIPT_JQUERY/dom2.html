@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var sutds = [
+        { no: 1001, name: "코스타", grade: 3, major: "산업디자인" },
+        { no: 1002, name: "타스타", grade: 1, major: "인지심리학" },
+        { no: 1003, name: "음소거", grade: 2, major: "영상학과" },
+        { no: 1004, name: "참가자", grade: 3, major: "컴퓨터공학" },
+      ];
+      window.onload = function () {
+        var tbody = document.querySelector("#table>tbody");
+        var elemStr = "";
+        sutds.forEach(
+          (item, index) =>
+            (elemStr += `<tr>
+              <td>${item.no}</td>
+              <td>${item.name}</td>
+              <td>${item.grade}</td>
+              <td>${item.major}</td>
+            </tr>`)
+        );
+        table.innerHTML += elemStr;
+      };
+      //스크립트 위치가 어디에있든 window.onload에 있으면 필요한 엘리먼트
+      //를 찾아서 실행시킵니다.
+    </script>
+  </head>
+  <body>
+    <table id="table" border="1">
+      <thead>
+        <th>학번</th>
+        <th>이름</th>
+        <th>학년</th>
+        <th>학과</th>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </body>
+</html>

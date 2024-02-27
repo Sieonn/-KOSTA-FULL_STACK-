@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var arr = [3, 5, 1, 7, 2];
+      function descCompare(x, y) {
+        return x - y;
+      }
+      function bubbleSort(array) {
+        for (var i = 0; i < array.length - 1; i++) {
+          for (var j = 0; j < array.length - 1 - i; j++) {
+            if (Compare(array[j], array[j + 1]) > 0) {
+              var t = array[j];
+              array[j] = array[j + 1];
+              array[j + 1] = t;
+            }
+          }
+        }
+      }
+      function descCompare(x, y) {
+        return x - y;
+      }
+      bubbleSort(arr, descCompare);
+      console.log(arr);
+
+      bubbleSort(arr, function (x, y) {
+        return x - y;
+      });
+      console.log(arr);
+    </script>
+  </head>
+  <body></body>
+</html>

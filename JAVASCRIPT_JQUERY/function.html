@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function hello() {
+        console.log("안녕? 자바스크립트");
+      }
+      hello(); //함수 호출
+
+      function sum(x, y) {
+        return x + y;
+      }
+
+      var res = sum(10, 20);
+      console.log(res);
+
+      var res1 = hello();
+
+      var f = sum;
+      console.log(f(100, 200));
+
+      var func = function (n) {
+        return n + 10;
+      };
+      console.log(func(10));
+    </script>
+  </head>
+  <body></body>
+</html>

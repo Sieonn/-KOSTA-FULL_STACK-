@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let arr = [];
+      let obj = { nmew: "홍", age: 20, address: "서울시 강북구" };
+      let n = obj.name;
+      let a = obj.age;
+      let c = obj.address;
+      let user = {
+        name: "john",
+        age: 30,
+        "like birds": true,
+      };
+      console.log(user.name);
+      console.log(user.age);
+      console.log(user["likes birds"]);
+
+      let change = function (key, value) {
+        //user[key] = value;
+        user = { ...user, [key]: value };
+      };
+
+      change("name", "hong");
+      console.log(user);
+      change("age", 20);
+      console.log(user);
+      change("likes birds", false);
+      console.log(user);
+
+      // delete user["likes birds"];
+      // console.log(user);
+      //let key = "name";
+      //console.log(user[key]);
+
+      for (key in user) {
+        console.log("${key}:${user[key]}");
+      }
+
+      let arr2 = [10, 20, 30, 40, 50];
+      for (n of arr2) {
+        console.log(n);
+      }
+      for (i in arr2) {
+        console.log(arr2[i]);
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

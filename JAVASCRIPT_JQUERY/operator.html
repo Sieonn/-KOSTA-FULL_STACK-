@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //수학: +,-,*,/,%,,**
+      var n = 10 ** 2;
+      console.log(n);
+
+      var name = "hong" + "gil dong";
+      console.log(name);
+
+      console.log(2 + 1 + "2");
+      console.log(1 + Number("2"));
+      console.log(1 + +"2");
+
+      //증감연산자: ++,--
+      //비교연산자: &, |, ^, ~, <<, >>, >>>
+
+      //대입연산자: =, +=, -=, *=, <<=,...
+
+      console.log(0 == false);
+      console.log(0 === false);
+      console.log(null == undefined);
+      console.log(null === undefined);
+      console.log("apple" > "banana");
+
+      //삼항 조건 연산자
+      var age = 20;
+      var adult = age > 18 ? true : false;
+
+      //논리연산자: ||(or), &&(and), !(not)
+
+      //??(nullish 병합여산자)
+      // x = a??b : a가 null도 아니고 undefined도 아니면 a, 그 외에는 b
+      // x =  (a!==null && a!==undefined)? a:b;
+
+      var firstName = null;
+      var lastName = null;
+      var nickName = "사막";
+      console.log(firstName ?? lastName ?? nickName);
+
+      var com = 10 > "20";
+
+      // ||
+      // x = a||b: a가 null도 아니고 undefined도 아니고 0도 아니면 a, 그 외에는 b
+      var res = 0 || 0 || 30;
+      console.log(res);
+
+      var res2 = 0 ?? 0 ?? 30;
+      console.log(res2);
+    </script>
+  </head>
+  <body></body>
+</html>
