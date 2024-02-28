@@ -11,6 +11,33 @@
         cursor: pointer;
       }
     </style>
+    <script>
+      // 여기에 코드를 작성하세요.
+      window.onload = function () {
+        let lis = document.querySelectorAll("li");
+        for (li of lis) {
+          li.onclick = function (e) {
+            if (e.ctrlKey) {
+              toggleSelect(this);
+            } else {
+              singleSelect(this);
+            }
+          };
+        }
+        function toggleSelect(li) {
+          li.classList.toggle("selected");
+        }
+        function singleSelect(li) {
+          removeSelected();
+          li.classList.add("selected");
+        }
+        function removeSelected() {
+          for (li of lis) {
+            li.classList.remove("selected");
+          }
+        }
+      };
+    </script>
   </head>
 
   <body>
@@ -24,10 +51,5 @@
       <li>Svelte</li>
       <li>Blazor</li>
     </ul>
-
-    <script>
-      // 여기에 코드를 작성하세요.
-    </script>
   </body>
 </html>
->>>>>>> 5694a659907a0a67362ced7aab52b28851e50e4b
