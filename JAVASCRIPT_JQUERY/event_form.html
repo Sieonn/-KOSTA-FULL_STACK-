@@ -6,15 +6,24 @@
     <title>Document</title>
     <script>
       window.onload = function () {
-        let myform = document.getElementById("myform");
-        let my = document.forms.my;
+        let my1 = document.getElementById("my");
+        let my2 = document.forms.my;
+        let my3 = document.forms[0];
+
+        let my4 = document.getElementById("your");
+        let my5 = document.forms.your;
+        let my6 = document.forms.forms[1];
       };
     </script>
   </head>
   <body>
-    <form action="" name="my" id="myform">
+    <form action="" name="my" id="my">
       <input type="text" name="one" id="" />
       <input type="text" name="two" id="" />
+    </form>
+    <form action="" name="your" id="your">
+      <input type="text" name="three" id="" />
+      <input type="text" name="four" id="" />
     </form>
   </body>
 </html>
