@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      window.onload = function () {
+        document.getElementById("button").onclick = function () {
+          let hobbys = document.querySelectorAll("input[name='hobby']:checked");
+          for (hobby of hobbys) {
+            console.log(hobby.value);
+          }
+        };
+      };
+    </script>
+  </head>
+  <body>
+    <input type="checkbox" name="hobby" value="book" />독서
+    <input type="checkbox" name="hobby" value="music" />음악감상
+    <input type="checkbox" name="hobby" value="sports" />스포츠
+    <button id="button">확인</button>
+  </body>
+</html>
