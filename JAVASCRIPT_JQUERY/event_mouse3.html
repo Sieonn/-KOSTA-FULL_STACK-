@@ -4,6 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script>
+      window.onload = function () {
+        let txt = document.getElementById("txt");
+        txt.onmousemove = function (e) {
+          this.value = e.clientX + ":" + e.clientY;
+        };
+        let dbspan = document.getElementById("dbspan");
+        dbspan.ondblclick = function () {
+          alert("dblclick");
+        };
+      };
+    </script>
   </head>
-  <body></body>
+  <body>
+    <input type="text" name="" id="txt" value="Mouse over me" /><br />
+
+    <span id="dbspan" onmousedown="return false">이곳을 더블클릭하세요 </span>
+    <div oncopy="alert('복사할 수 없습니다.'); return false">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi eaque quas
+      ut qui est quasi recusandae officia hic nam! Natus provident corporis
+      suscipit architecto quis modi nisi hic similique id!
+    </div>
+  </body>
 </html>
