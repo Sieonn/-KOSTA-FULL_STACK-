@@ -13,10 +13,13 @@ public class EnhancedFor1 {
        //인덱스를 사용하고  종료 조건을 주지 않아도 된다
         // 단순히 해당 배열을 처음부터 끝까지 탐색한다.
         //오른쪽에는 탐색할 배열 왼쪽에는 탐색으로 찾은 값을 저장할 변수를 선언.
-        //하나씩 증가하는 것이 아니라 증가하는 값을 설정해 주어야할 때는
-        //향상된 배열의 값을 사용하지 못합니다.
         for(int number: numbers) {
             System.out.println(number);
         }
+        //for-each문을 사용할 수 없는 경우는 증가하는 index값이 필요할 때입니다.
+        for(int i=0; i<numbers.length; i++){
+            System.out.println("number"+i+"번의 결과는:"+numbers[i]);
+        }
+
     }
 }
