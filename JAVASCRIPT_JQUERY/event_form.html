@@ -9,10 +9,27 @@
         let my1 = document.getElementById("my");
         let my2 = document.forms.my;
         let my3 = document.forms[0];
+        my2.elements.one.value = "one";
+        my3.elements.two.value = "two";
+        my3.elements.check.checked = true;
 
         let my4 = document.getElementById("your");
         let my5 = document.forms.your;
-        let my6 = document.forms.forms[1];
+        let my6 = document.forms[1];
+        my5.elements.three.value = "three";
+        my6.elements.four.value = "four";
+
+        let genderList = my3.elements.gender;
+        for (gender of genderList) {
+          gender.onclick = function () {
+            if (this.checked && this.value == "famale") {
+              my3.elements.age.disabled = false;
+            } else {
+              my3.elements.age.disabled = true;
+            }
+            //document.querySelector("input[name='genter']:checked").value
+          };
+        }
       };
     </script>
   </head>
@@ -20,10 +37,19 @@
     <form action="" name="my" id="my">
       <input type="text" name="one" id="" />
       <input type="text" name="two" id="" />
+      <input type="checkbox" name="check" id="" />체크
+      <input type="radio" name="gender" value="male" />남
+      <input type="radio" name="gender" value="female" />여
+      <select name="age" id="">
+        <option value="20">20대</option>
+        <option value="30">30대</option>
+        <option value="40">40대</option>
+        <option value="50">50대</option>
+      </select>
     </form>
     <form action="" name="your" id="your">
-      <input type="text" name="three" id="" />
-      <input type="text" name="four" id="" />
+      <input type="text" name="three" value="" />
+      <input type="text" name="four" value="" />
     </form>
   </body>
 </html>
