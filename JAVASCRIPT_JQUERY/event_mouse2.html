@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      window.onload = function () {
+        let button = document.getElementById("button");
+        button.onclick = function (evnet) {
+          if (event.altkey && event.shiftkey) {
+            alert("야호");
+          }
+          if (evnet.ctrlkry) {
+            alert("이야호");
+          }
+        };
+      };
+    </script>
+  </head>
+  <body>
+    <button id="button">Alt, Shitft 키를 누른 상태에서 클릭</button>
+  </body>
+</html>
