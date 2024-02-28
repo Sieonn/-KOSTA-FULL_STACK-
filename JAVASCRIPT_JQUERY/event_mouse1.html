@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div
+    </style>
+    <script>
+      window.onload = function () {
+        let div = document.getElementById("div");
+        div.onmousedown = function (event) {
+          console.log("mousedown:" + event.button);
+        };
+        div.onmouseup = function (event) {
+          console.log("mouseup");
+        };
+
+        div.onmousemove = function (event) {
+          console.log("mousemove:" + event.button);
+        };
+        div.onmouseover = function (event) {
+          console.log("mouseover:" + event.button);
+        };
+        div.onmouseout = function (event) {
+          console.log("mouseout:" + event.button);
+        };
+        div.onclick = function () {
+          console.log("click:" + event.button);
+        };
+      };
+    </script>
+  </head>
+  <body>
+    <div id="div"></div>
+  </body>
+</html>
