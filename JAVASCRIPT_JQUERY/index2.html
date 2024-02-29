@@ -78,37 +78,34 @@
     <script>
       let form = document.forms.calculator;
 
-      let money_e = form.elements.moeny;
-      money_e.onchange = function(e) {
-        calculator();
-      }
-      let interest_e = form.elements.interest;
-      let months_s = form.elements.months;
+      form.elements.money.onchange = calculate;
+      form.elements.interest.onchange = calculate;
+      form.elements.months.onchange = calculate;
+
+      calculate();
 
       // your code
-      function calculator() {
+      function calculate() {
+        // initial : 계산전의 잔고
+        let initial = +form.elements.money.value;
 
-      let initial = +money.value;
-      console.log(form.elements.moeny);
-      // initial : 계산전의 잔고
-      //let money = +form.elements.money;
+        // interest : 이자율. 0.05는 연 5%의 이자율을 의미합니다
+        let interest = +form.elements.interest.value / 100;
 
-      // interest : 이자율. 0.05는 연 5%의 이자율을 의미합니다
-      let interest = +form.elements.interest / 100;
+        // years: 예금 유치기간으로 연단위
+        let years = form.elements.months.value / 12;
+        let result = Math.round(initial * (1 + interest * years));
 
-      // years: 예금 유치기간으로 연단위
-      let years = form.elements.months.value / 12;
-      let result = Math.round(initial * (1 + interest * years));
+        // height: result / 예치금액 * 100px
+        let height = (result / initial) * 100 + "px";
 
-      // height: result / 예치금액 * 100px
-      let height = (result / money) * 100 + "px";
-
-      let money_before = document.querySelector("#money-before");
-      let moeny_after = document.querySelector("#money-after");
-      let height_after = document.querySelector("#height-after");
-      money_before.innerHTML = money;
-      moeny_after.innerHTML = result;
-      height_after.style.height = height;
+        let money_before = document.querySelector("#money-before");
+        let money_after = document.querySelector("#money-after");
+        let height_after = document.querySelector("#height-after");
+        money_before.innerHTML = initial;
+        money_after.innerHTML = result;
+        height_after.style.height = height;
+      }
     </script>
   </body>
 </html>
