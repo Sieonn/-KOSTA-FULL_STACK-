@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+      $(function () {
+        var text = $("h1").text();
+        var html = $("h1").html();
+        $("body").append("<h1>" + text + "</h1>");
+        $("body").append("<h1>" + html + "</h1>");
+      });
+    </script>
+  </head>
+  <body></body>
+  <h1><i>Header</i></h1>
+</html>

@@ -11,9 +11,16 @@
       //      $("h1").css("background", "black");
       //      });
 
+        let i=0
       $(function () {
+        let imgs = ["blackcat.jpg", "cat1.jpg"];
         $("h1").css("color", "red");
         $("h1").css("background", "black");
+        $("#img").attr("src",imgs[i++%2]);
+        $("#next").click(function(){
+            $("img").attr("src",imgs[i++%2]);
+        })
+        console.log($("img").attr("width"))
       });
 
       //      window.onload = function() {
@@ -29,5 +36,5 @@
     <h1>Header</h1>
     <h1>Header</h1>
     <h1>Header</h1>
-  </body>
+    <img src="" alt="" width="150px" height="110px"><button id="next">클릭</button>
 </html>
