@@ -1,3 +1,6 @@
-a =2541
-b=1998
-print(a-b)
+a= input()
+b=input()
+sum=[]
+for i in range(b):
+    sum[i] = int(a)*int(b[i])*10**(2-i)
+print(sum)
