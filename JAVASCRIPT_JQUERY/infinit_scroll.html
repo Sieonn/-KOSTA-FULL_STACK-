@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+      $(function () {
+        var appendData = function () {
+          for (var i = 0; i < 20; i++) {
+            $("<h1>Shopping data</h1>").appendTo("body");
+          }
+        };
+        appendData();
+        $(window).scroll(function () {
+          var scrollHeight = $(window).scrollTop() + $(window).height();
+          var documentHeight = $(document).height();
+
+          if (scrollHeight == documentHeight) {
+            appendData();
+          }
+        });
+      });
+    </script>
+  </head>
+  <body></body>
+</html>
