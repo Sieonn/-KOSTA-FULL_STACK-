@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+      #(function(){
+          $("#jumin1").keyup(function(){
+              if($(this).val().length>=6) {
+                  $("#jumn2").focus();
+              }
+          })
+          $("#jumin2").keyup(function(e){
+              if(e.key=='Backspace' && $(this).val().length==0){
+                  $("#jumin1").focus();
+              }
+          })
+      })
+    </script>
+  </head>
+  <body>
+    <input type="text" maxlength="6" id="jumin1" />
+    <span>-</span>
+    <input type="text" maxlength="7" id="jumin2" />
+  </body>
+</html>
