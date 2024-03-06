@@ -10,10 +10,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import vo.Member;
+
 /**
  * Servlet implementation class Join
  */
-@WebServlet("/Join")
+@WebServlet("/join")
 public class Join extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -31,8 +33,7 @@ public class Join extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		request.setCharacterEncoding("UTF-8");
+		request.setCharacterEncoding("utf-8");
 		String id = request.getParameter("id");
 		String name = request.getParameter("name");
 		String password = request.getParameter("password");
@@ -44,14 +45,16 @@ public class Join extends HttpServlet {
 
 		// 중복 아이디 확인
 		Object obj = session.getAttribute(id);
+
 		if (obj != null) {
-			request.setAttribute("err", "사용중인 아이디입니다.");
+			request.setAttribute("err", "사용중인 아이디입니다");
 			RequestDispatcher dispatcher = request.getRequestDispatcher("error.jsp");
 			dispatcher.forward(request, response);
 		} else {
 			session.setAttribute(id, member);
 			response.sendRedirect("login.jsp");
 		}
+
 	}
 
 }
