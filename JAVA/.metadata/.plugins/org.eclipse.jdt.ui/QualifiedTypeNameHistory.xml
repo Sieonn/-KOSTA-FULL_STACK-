@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
+<<<<<<< HEAD
     <fullyQualifiedTypeName name="org.apache.jasper.runtime.ProtectedFunctionMapper"/>
     <fullyQualifiedTypeName name="javax.servlet.DispatcherType"/>
     <fullyQualifiedTypeName name="javax.websocket.Session"/>
@@ -7,4 +8,10 @@
     <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
     <fullyQualifiedTypeName name="vo.Account"/>
     <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+=======
+    <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+>>>>>>> 78761dd3eecf0c48de4cb0a783c9ef5ee99b2835
 </qualifiedTypeNameHistroy>
