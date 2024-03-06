@@ -4,4 +4,8 @@
     <fullyQualifiedTypeName name="java.lang.Object"/>
     <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+    <fullyQualifiedTypeName name="servlet.CookieTest"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.Cookie"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Member"/>
+    <fullyQualifiedTypeName name="vo.Member"/>
 </qualifiedTypeNameHistroy>

@@ -1,11 +1,19 @@
 package bean;
 
 public class User {
-	private String name;
 	private String id;
+	private String name;
 	private String password;
-	private String address;
 	private String email;
+	private String address;
+	public User(String id, String name, String password, String email, String address) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.password = password;
+		this.email = email;
+		this.address = address;
+	}
 	public String getName() {
 		return name;
 	}
@@ -35,8 +43,6 @@ public class User {
 	}
 	public void setEmail(String email) {
 		this.email = email;
-	}
-
-	
+	}	
 
 }
