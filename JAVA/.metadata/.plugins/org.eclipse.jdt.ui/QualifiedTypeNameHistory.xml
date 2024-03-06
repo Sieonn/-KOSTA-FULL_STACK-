@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
+<<<<<<< HEAD
+    <fullyQualifiedTypeName name="org.apache.jasper.runtime.ProtectedFunctionMapper"/>
+    <fullyQualifiedTypeName name="javax.servlet.DispatcherType"/>
+    <fullyQualifiedTypeName name="javax.websocket.Session"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+    <fullyQualifiedTypeName name="vo.Account"/>
+    <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+=======
     <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="java.lang.Object"/>
     <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<<<<<<< HEAD
     <fullyQualifiedTypeName name="servlet.CookieTest"/>
     <fullyQualifiedTypeName name="javax.servlet.http.Cookie"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Member"/>
     <fullyQualifiedTypeName name="vo.Member"/>
+=======
+>>>>>>> 78761dd3eecf0c48de4cb0a783c9ef5ee99b2835
+>>>>>>> 7eeb336906e62b02181d49c4e8f702920dd0ee61
 </qualifiedTypeNameHistroy>

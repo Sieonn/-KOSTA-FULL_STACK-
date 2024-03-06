@@ -1,8 +1,27 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+CONTENT_ASSIST_BACKGROUND_COLOR=209,240,216
+CONTENT_ASSIST_FOREGROUND_COLOR=8,23,11
+content_assist_parameters_background=209,240,216
+content_assist_parameters_foreground=8,23,11
+content_assist_proposals_background=209,240,216
+content_assist_proposals_foreground=8,23,11
+>>>>>>> 78761dd3eecf0c48de4cb0a783c9ef5ee99b2835
+>>>>>>> 7eeb336906e62b02181d49c4e8f702920dd0ee61
 eclipse.preferences.version=1
 fontPropagated=true
 org.eclipse.wst.jsdt.ui.editor.tab.width=
 org.eclipse.wst.jsdt.ui.formatterprofiles.version=11
 org.eclipse.wst.jsdt.ui.javadoclocations.migrated=true
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+overriddenByCSS=,CONTENT_ASSIST_BACKGROUND_COLOR,CONTENT_ASSIST_FOREGROUND_COLOR,content_assist_parameters_background,content_assist_parameters_foreground,content_assist_proposals_background,content_assist_proposals_foreground,
+>>>>>>> 78761dd3eecf0c48de4cb0a783c9ef5ee99b2835
+>>>>>>> 7eeb336906e62b02181d49c4e8f702920dd0ee61
 proposalOrderMigrated=true
 tabWidthPropagated=true
 useAnnotationsPrefPage=true
