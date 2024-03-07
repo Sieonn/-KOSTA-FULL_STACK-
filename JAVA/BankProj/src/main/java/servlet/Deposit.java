@@ -18,27 +18,29 @@ import vo.Account;
 @WebServlet("/deposit")
 public class Deposit extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public Deposit() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
 
 	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#HttpServlet()
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public Deposit() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
 		String id = request.getParameter("id");
 		int money = Integer.parseInt(request.getParameter("money"));
-		
+
 		HttpSession session = request.getSession();
-		Account acc = (Account)session.getAttribute(id);
+		Account acc = (Account) session.getAttribute(id);
 		RequestDispatcher dispatcher = null;
-		if(acc==null) {
+		if (acc == null) {
 			request.setAttribute("err", "계좌번호가 틀립니다");
 			dispatcher = request.getRequestDispatcher("error.jsp");
 		} else {
@@ -47,7 +49,11 @@ public class Deposit extends HttpServlet {
 			dispatcher = request.getRequestDispatcher("accountinfo.jsp");
 		}
 		dispatcher.forward(request, response);
-		
+
 	}
 
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		request.getRequestDispatcher("deposit.jsp").forward(request, response);
+	}
 }

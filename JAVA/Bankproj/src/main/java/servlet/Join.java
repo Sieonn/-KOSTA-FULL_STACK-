@@ -57,4 +57,8 @@ public class Join extends HttpServlet {
 
 	}
 
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		request.getRequestDispatcher("join.jsp").forward(request, response);
+	}
 }

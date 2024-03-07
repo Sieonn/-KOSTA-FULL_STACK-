@@ -1,10 +1,7 @@
--- ----------------------------------------------------------
--- DML: insert, update, delete (데이터 삽입, 수정, 삭제)
--- ---------------------------------------------------------
--- insert into table_name (column_name1, cloumn_name2,...) values(value1, value2,...)
-
-CREATE TABLE USER (
-	id VARCHAR(10),
-	NAME VARCHAR(20)
-	);
-	
+DROP TABLE account;
+CREATE TABLE account(
+id VARCHAR(30) PRIMARY KEY,
+NAME VARCHAR(50) net NULL,
+balance INTEGER DEFAULT 0 ,
+TYPE VARCHAR(20),
+grade VARCHAR(20));

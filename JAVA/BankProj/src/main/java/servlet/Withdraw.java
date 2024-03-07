@@ -36,11 +36,11 @@ public class Withdraw extends HttpServlet {
 		request.setCharacterEncoding("utf-8");
 		String id = request.getParameter("id");
 		int money = Integer.parseInt(request.getParameter("money"));
-		
+
 		HttpSession session = request.getSession();
-		Account acc = (Account)session.getAttribute(id);
+		Account acc = (Account) session.getAttribute(id);
 		RequestDispatcher dispatcher = null;
-		if(acc==null) {
+		if (acc == null) {
 			request.setAttribute("err", "계좌번호가 틀립니다");
 			dispatcher = request.getRequestDispatcher("error.jsp");
 		} else {
@@ -51,4 +51,8 @@ public class Withdraw extends HttpServlet {
 		dispatcher.forward(request, response);
 	}
 
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		request.getRequestDispatcher("withdraw.jsp").forward(request, response);
+	}
 }

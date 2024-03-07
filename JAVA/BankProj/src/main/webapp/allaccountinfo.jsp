@@ -112,7 +112,7 @@ while (names.hasMoreElements()) {
 				<div class="title column">종류</div>
 				<div class="title column">등급</div>
 			</div>
-			<c:forEach var="acc" items='<%=accs%>' varStatus="status">
+			<c:forEach var="acc" items='${requestScope.accs }' varStatus="status">
 				<div class="row">
 					<div class="cloumn">${status.count }</div>
 					<div class="column">${status.count }</div>
@@ -121,7 +121,7 @@ while (names.hasMoreElements()) {
 					<div class="column">${acc.balance }</div>
 					<div class="column">${acc.type }</div>
 					<div class="column">
-						<c:if test='${acc.grade!=null }'>
+						<c:if test='${acc.grade ne Empty}'>
                 	${acc.grade }
                 	</c:if>
 					</div>
