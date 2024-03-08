@@ -6,10 +6,11 @@ balance INTEGER DEFAULT 0 ,
 TYPE VARCHAR(20),
 grade VARCHAR(20));
 
-CREATE TABLE member(
+DROP TABLE member;
+CREATE TABLEmember member(
 id VARCHAR(30) PRIMARY KEY,
 NAME VARCHAR(50) NOT null,
-PASSWORmemberD VARCHAR(50),
+PASSWORD VARCHAR(20),
 email varchar(50),
-address VARCHAR(50)
+address VARCHAR(200)
 );
