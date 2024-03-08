@@ -60,7 +60,6 @@
 			</div>
 			<c:forEach var="acc" items='${requestScope.accs }' varStatus="status">
 				<div class="row">
-					<div class="cloumn">${status.count }</div>
 					<div class="column">${status.count }</div>
 					<div class="column">${acc.id }</div>
 					<div class="column">${acc.name }</div>

@@ -9,7 +9,10 @@
       Cookie[] cookies = request.getCookies();
       for(Cookie cookie : cookies) {
          if(cookie.getName().equals("autologin")) {
-            autologin = true;
+        	 if(cookie.getValue().equals("true"))
+        		 autologin = true;
+        	 else
+        		 autologin = false;
          } else if(cookie.getName().equals("id")) {
             id = cookie.getValue();
          } else if (cookie.getName().equals("password")) {

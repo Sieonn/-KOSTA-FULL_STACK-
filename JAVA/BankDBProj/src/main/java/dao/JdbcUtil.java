@@ -14,7 +14,7 @@ public class JdbcUtil {
 		try {
 			Context initCtx = new InitialContext();
 			Context envCtx = (Context)initCtx.lookup("java:comp/env");
-			DataSource ds = (DataSource)envCtx.lookup("");
+			DataSource ds = (DataSource)envCtx.lookup("jdbc/kosta");
 			conn=ds.getConnection();
 			conn.setAutoCommit(false);
 		} catch(Exception e) {
