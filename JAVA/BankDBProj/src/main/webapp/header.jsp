@@ -26,7 +26,7 @@ a {
 	<div style="float: right;">
 		<c:choose>
 			<c:when test="${user eq Empty }">
-				<a href="loin.jsp">로그인</a>
+				<a href="login.jsp">로그인</a>
 			</c:when>
 			<c:otherwise>
 				<c:out value="${user }" />님 환영합니다. &nbsp;&nbsp;
