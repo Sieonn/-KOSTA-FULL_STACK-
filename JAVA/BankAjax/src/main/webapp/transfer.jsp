@@ -36,29 +36,55 @@
             margin: 0 auto;
         }
     </style>
+ <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+	$(function() {
+		$("#submit").click(function() {
+			transfer = {};
+			transfer.id = $("#sid").val();
+			transfer.id = $("#rid").val();
+			transfer.money = +$("#money").val();
+			console.log(transfer);
+			$.ajax({
+				url : "transfer",
+				type : "post",
+				async : true,
+				data : {
+					transfer : JSON.stringify(transfer)
+				},
+				success : function(result) {
+					alert(result);
+					$("#sid").val("");
+					$("#rid").val("");
+					$("#money").val("");
+				},
+				error : function(err) {
+					alert(" 계좌이체에 실패했습니다.")
+				}
+			})
+		})
+	})
+</script>
 </head>
 <body>
 	<%@ include file="header.jsp" %>
-    <form action="transfer" method="post">
         <div class="header"><h3>계좌송금</h3></div>
         <div class="container">
             <div class="row">
                 <div class="title">보내는계좌번호</div>
-                <div class="input"><input type="text" name="sid"></div>
+                <div class="input"><input type="text" name="sid" id="sid"></div>
             </div>
             <div class="row">
                 <div class="title">받는계좌번호</div>
-                <div class="input"><input type="text" name="rid"></div>
+                <div class="input"><input type="text" name="rid" id="rid"></div>
             </div>
             <div class="row">
                 <div class="title">송금액</div>
-                <div class="input"><input type="text" name="money"></div>
+                <div class="input"><input type="text" name="money" id="money"></div>
             </div>
             <div class="button">
-                <input type="submit" value="송금">
+                <button id="submit">송금</button>
             </div>
         </div>
-
-    </form>
 </body>
 </html>

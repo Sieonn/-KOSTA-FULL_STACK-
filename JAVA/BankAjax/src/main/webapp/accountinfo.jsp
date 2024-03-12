@@ -47,7 +47,7 @@
     				$("#type").val(acc.type);
     				$("#grade").val(acc.grade);
     			},
-    			error:function(err) {
+    			error:function(result) {
     				alert("계좌가 개설되지 않았습니다.");
     			}
     		})

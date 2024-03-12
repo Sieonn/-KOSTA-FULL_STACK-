@@ -14,3 +14,13 @@ PASSWORD VARCHAR(20),
 email varchar(50),
 address VARCHAR(200)
 );
+DROP TABLE board;
+CREATE TABLE board(
+num INT NOT NULL AUTO_INCREMENT,
+subject varchar(255) DEFAULT NULL,
+content VARCHAR(255) DEFAULT NULL,
+writedate date DEFAULT NULL,
+fileurl VARCHAR(255) DEFAULT NULL,
+writer VARCHAR(100) DEFAULT NULL REFERENCES member(id),
+viewcount int DEFAULT,
+likecount int DEFAULT);
