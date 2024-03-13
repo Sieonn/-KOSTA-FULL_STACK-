@@ -4,6 +4,8 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.apache.ibatis.javassist.bytecode.analysis.MultiArrayType;
+
 import dao.BoardDao;
 import dao.BoardDaoImplement;
 import dto.Board;
@@ -46,5 +48,10 @@ public class BoardServiceImplement implements BoardService {
 	public Board boardDetail(Integer num) throws Exception {
 		return boardDao.selectBoard(num);
 	}
-
+public void boardModify(HttpServletRequest request) throws Exception{
+	File file = MultiArrayType.getFile("file");
+	if(file !=null) {
+		BFile
+	}
+}
 }

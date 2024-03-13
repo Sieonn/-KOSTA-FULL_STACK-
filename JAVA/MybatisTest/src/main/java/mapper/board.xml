@@ -21,4 +21,10 @@
 			select * from board where num=#{num}
 		]]>
 	</select>
+	<insert id="insertBoard" parameterType="dto.Board" useGeneratedKeys="true" keyProperty="num">
+			<![CDATA[
+			insert into board (subject,content, writedate,filenum,writer)
+			values (#{subject},#{content}, curdate(),#{filenum}, #{writer})
+		]]>
+	</insert>
 </mapper>
