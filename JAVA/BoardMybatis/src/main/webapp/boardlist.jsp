@@ -24,6 +24,14 @@
 <table>	
 	<tr id="tr_top">
 		<th>번호</th><th>제목</th><th>작성자</th><th>날짜</th><th>조회수</th><th>삭제</th>
+		<c:forEach items="${boardList  }" var = "board">
+		<tr><td>${board.num }</td>
+		<td><a href = "boarddetail?num=${board.num }">${board.subject }</a></td>
+		<td>${board.writer}</td>
+		<td>${board.writedate}</td>
+		<td>${board.viewcount}</td>
+		</tr>
+		</c:forEach>
 	</tr>
 </table>
 <div id="emptyArea">

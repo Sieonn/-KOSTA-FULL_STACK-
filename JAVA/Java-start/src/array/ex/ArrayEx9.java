@@ -15,6 +15,7 @@ public class ArrayEx9 {
             System.out.println("1. 상품 등록| 2. 상품 목록| 3. 종료");
             System.out.print("메뉴를 선택하세요");
             int menu = scanner.nextInt();
+            scanner.nextLine();
             if (menu == 1) {
                 if (productCount >= prdmax) {
                     System.out.println("입력할 수 있는 개수를 초과했습니다.");
@@ -23,7 +24,6 @@ public class ArrayEx9 {
                 System.out.print("상품 이름을 입력하세요:");
                 productNames[productCount] = scanner.nextLine();
 
-                scanner.nextLine();
                 System.out.print("상품 가격을 입력하세요:");
                 productPrices[productCount] = scanner.nextInt();
 
