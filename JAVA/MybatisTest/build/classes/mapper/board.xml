@@ -6,7 +6,7 @@
 <mapper namespace="mapper.board">
 	<select id="selectBoardList" parameterType="Integer" resultType="dto.Board">
 		<![CDATA[
-			select * from board limit #{row}, 10
+			select * from board order by num desc limit #{row}, 10
 		]]>
 	</select>
 	
@@ -21,10 +21,34 @@
 			select * from board where num=#{num}
 		]]>
 	</select>
+	
 	<insert id="insertBoard" parameterType="dto.Board" useGeneratedKeys="true" keyProperty="num">
-			<![CDATA[
-			insert into board (subject,content, writedate,filenum,writer)
-			values (#{subject},#{content}, curdate(),#{filenum}, #{writer})
+		<![CDATA[
+			insert into board (subject,content,writedate,filenum,writer)
+			values (#{subject},#{content},curdate(),#{filenum},#{writer})
 		]]>
 	</insert>
+	
+	<insert id="insertFile" parameterType="dto.BFile" useGeneratedKeys="true" keyProperty="num">
+		<![CDATA[
+			insert into file (directory,name,size,contenttype,uploaddate)
+			values (#{directory},#{name},#{size},#{contenttype},curdate())
+		]]>
+	</insert>
+	
+	<update id="updateBoard" parameterType="dto.Board">
+		update board
+			<trim prefix="SET" suffixOverrides=",">
+				<if test="subject!=null">subject=#{subject},</if>
+				<if test="content!=null">content=#{content},</if>
+				<if test="filenum!=null">filenum=#{filenum}</if>
+			</trim>
+			where num=#{num}
+	</update>
+	
+	<update id="updateBoardViewCount">
+		<![CDATA[
+			update board set viewcount=viewcount+1 where num=#{num}
+		]]>
+	</update>
 </mapper>

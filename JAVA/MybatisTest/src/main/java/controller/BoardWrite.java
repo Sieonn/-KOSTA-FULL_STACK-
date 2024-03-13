@@ -7,6 +7,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import dto.Board;
+import service.BoardService;
+import service.BoardServiceImplement;
+
 /**
  * Servlet implementation class BoardWrite
  */
@@ -23,7 +27,16 @@ public class BoardWrite extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+		request.setCharacterEncoding("utf-8");
+		try {
+			BoardService boardService=new BoardServiceImplement();
+			boardService.boardWrite(request);
+			response.sendRedirect("boardlist");
+		} catch(Exception e) {
+			e.printStackTrace();
+			request.setAttribute("err", "게시글 작성 실패");
+			request.getRequestDispatcher("error.jsp").forward(request, response);
+		}
 	}
 
 }

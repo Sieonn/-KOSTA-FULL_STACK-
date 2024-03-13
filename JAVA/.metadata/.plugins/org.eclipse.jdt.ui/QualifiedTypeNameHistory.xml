@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="javax.sql.DataSource"/>
-    <fullyQualifiedTypeName name="java.lang.Process"/>
-    <fullyQualifiedTypeName name="dao.AccountDAO"/>
     <fullyQualifiedTypeName name="dao.AccountDAOImpl"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="java.lang.StrictMath"/>
@@ -60,4 +57,7 @@
     <fullyQualifiedTypeName name="service.BoardService"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="org.apache.ibatis.javassist.bytecode.analysis.MultiArrayType"/>
+    <fullyQualifiedTypeName name="dao.MemberDao"/>
+    <fullyQualifiedTypeName name="dao.MemberDaoImplement"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Member"/>
 </qualifiedTypeNameHistroy>
