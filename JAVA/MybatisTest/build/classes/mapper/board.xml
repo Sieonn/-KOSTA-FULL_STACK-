@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+   
+   <!-- 충돌이 날 수 있기 때문에 이름을 지정 -->
+<mapper namespace="mapper.board">
+	<select id="selectBoardList" parameterType="Integer" resultType="dto.Board">
+		<![CDATA[
+			select * from board limit #{row}, 10
+		]]>
+	</select>
+	
+	<select id="selectBoardCount" resultType="Integer">
+		<![CDATA[
+			select count(*) from board
+		]]>
+	</select>
+	
+	<select id="selectBoard" resultType="dto.Board">
+		<![CDATA[
+			select * from board where num=#{num}
+		]]>
+	</select>
+</mapper>

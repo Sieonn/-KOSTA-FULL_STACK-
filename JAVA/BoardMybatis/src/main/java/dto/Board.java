@@ -12,7 +12,6 @@ public class Board {
 	private Integer viewcount;
 	private Integer likecount;
 	
-	
 	public Integer getNum() {
 		return num;
 	}
@@ -37,6 +36,7 @@ public class Board {
 	public void setWritedate(Date writedate) {
 		this.writedate = writedate;
 	}
+	
 	public Integer getFilenum() {
 		return filenum;
 	}
@@ -61,5 +61,6 @@ public class Board {
 	public void setLikecount(Integer likecount) {
 		this.likecount = likecount;
 	}
+	
 	
 }

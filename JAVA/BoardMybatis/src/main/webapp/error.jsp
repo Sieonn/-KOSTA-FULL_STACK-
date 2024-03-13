@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h3 style="text-align:center"> <%=request.getAttribute("err") %></h3>
+<h3 style="text-align:center"><%=request.getAttribute("err") %></h3>
 </body>
 </html>

@@ -46,5 +46,4 @@ public class File {
 	public void setUploaddate(Date uploaddate) {
 		this.uploaddate = uploaddate;
 	}
-	
 }

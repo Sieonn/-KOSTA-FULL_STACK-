@@ -10,4 +10,6 @@ public interface BoardDAO {
 	void insertFile(File file) throws Exception;
 	List<Board> selectBoardList(Integer row) throws Exception;
 	Integer selectBoardCount() throws Exception;
+	Board selectBoard(Integer num) throws Exception;
+	void updateBoard(Board board) throws Exception;
 }

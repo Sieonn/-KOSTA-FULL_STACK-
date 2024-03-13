@@ -1,6 +1,5 @@
 package controller;
 
-import java.io.File;
 import java.io.IOException;
 
 import javax.servlet.ServletException;
@@ -11,33 +10,45 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.oreilly.servlet.MultipartRequest;
 import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
+import com.oreilly.servlet.multipart.FileRenamePolicy;
 
 import dto.Board;
+import dto.File;
 import service.BoardService;
-import service.BoardServiceImplement;
+import service.BoardServiceImpl;
 
+/**
+ * Servlet implementation class BoardWrite
+ */
 @WebServlet("/boardwrite")
 public class BoardWrite extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
     public BoardWrite() {
         super();
+        // TODO Auto-generated constructor stub
     }
 
-//	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//		request.setCharacterEncoding("utf-8");
-//	}
-
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.getRequestDispatcher("writeform.jsp").forward(request, response);
 	}
 
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
+		
 		try {
-			BoardService boardService=new BoardServiceImplement();
+			BoardService boardService = new BoardServiceImpl();
 			boardService.boardWrite(request);
-			request.getRequestDispatcher("writeform.jsp").forward(request, response);
+			response.sendRedirect("boardlist");
 		} catch(Exception e) {
 			e.printStackTrace();
 			request.setAttribute("err", "글쓰기 실패");

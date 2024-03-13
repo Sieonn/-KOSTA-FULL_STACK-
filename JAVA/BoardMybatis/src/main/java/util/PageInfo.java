@@ -3,9 +3,8 @@ package util;
 public class PageInfo {
 	private Integer allPage;
 	private Integer curPage;
-	private Integer starPage;
+	private Integer startPage;
 	private Integer endPage;
-	
 	public Integer getAllPage() {
 		return allPage;
 	}
@@ -18,11 +17,11 @@ public class PageInfo {
 	public void setCurPage(Integer curPage) {
 		this.curPage = curPage;
 	}
-	public Integer getStarPage() {
-		return starPage;
+	public Integer getStartPage() {
+		return startPage;
 	}
-	public void setStarPage(Integer starPage) {
-		this.starPage = starPage;
+	public void setStartPage(Integer startPage) {
+		this.startPage = startPage;
 	}
 	public Integer getEndPage() {
 		return endPage;
@@ -30,6 +29,4 @@ public class PageInfo {
 	public void setEndPage(Integer endPage) {
 		this.endPage = endPage;
 	}
-	
-	
 }
