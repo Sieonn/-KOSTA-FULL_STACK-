@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<!-- 충돌이 날 수 있기 때문에 이름을 지정 -->
+<mapper namespace="mapper.board">
+	<select id="selectBoardList" parameterType="Integer" resultType="dto.Board">
+		<![CDATA[
+			select * from board order by num desc limit #{row}, 10
+		]]>
+	</select>
+	
+	<select id="selectBoardCount" resultType="Integer">
+		<![CDATA[
+			select count(*) from board
+		]]>
+	</select>
+	
+	<select id="selectBoard" resultType="dto.Board" parameterType="Integer">
+		<![CDATA[
+			select * from board where num = #{num}
+		]]>
+	</select>
+	
+	<insert id="insertBoard" parameterType="dto.Board" useGeneratedKeys="true" keyProperty="num">
+		<![CDATA[
+			insert into board (subject, content, writedate, filenum, writer)
+			values (#{subject},#{content},curdate(),#{filenum},#{writer}) 
+		]]>
+	</insert>
+	
+	<insert id="insertFile" parameterType="dto.BFile" useGeneratedKeys="true" keyProperty="num">
+		<![CDATA[
+			insert into file (directory, name, size, contenttype, uploaddate)
+			values(#{directory},#{name},#{size},#{contenttype}, curdate())
+		]]>
+	</insert>
+	
+	<update id="updateBoard" parameterType="dto.Board">
+		update board
+		<trim prefix = "SET" suffixOverrides=",">
+			<if test = "subject != null">subject =#{subject},</if>
+			<if test = "content != null">content =#{content},</if>
+			<if test = "filenum != null">filenum =#{filenum}</if>
+		</trim>
+		where num = #{num}
+	</update>
+	
+	<update id="updateBoardViewCount">
+		<![CDATA[
+			update board set viewcount = viewcount+1 where num= #{num}
+		]]>
+	</update>
+	
+</mapper>
