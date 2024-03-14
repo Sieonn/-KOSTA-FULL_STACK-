@@ -3,7 +3,7 @@ package service;
 import dao.BoardLikeDao;
 import dao.BoardLikeDaoImpl;
 
-public class BoardLikeServiceImpl implements BoardLikeService {
+public abstract class BoardLikeServiceImpl implements BoardLikeService {
 	private BoardLikeDao boardLikeDao = new BoardLikeDaoImpl();
 	@Override
 	public boolean boardLike(String memberId, Integer boardNum) throws Exception {

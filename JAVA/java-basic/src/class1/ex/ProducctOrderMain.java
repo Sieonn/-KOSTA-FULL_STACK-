@@ -21,13 +21,11 @@ public class ProducctOrderMain {
         order3.quantity = 2;
         orders[2] = order3;
 
-        int totalAmount = 0;
         int totalprice = 0;
         for(int i=0; i<orders.length; i++){
-            totalAmount += orders[i].quantity;
             totalprice += orders[i].quantity*orders[i].price;
             System.out.println(orders[i].prodeuctName+ orders[i].price+"원" + orders[i].quantity+"개");
         }
-        System.out.println("총 "+totalprice +"원 "+totalAmount+"개");
+        System.out.println("총 결제 금액: "+totalprice +"원 ");
     }
 }

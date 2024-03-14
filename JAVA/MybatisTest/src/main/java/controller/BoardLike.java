@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServletResponse;
 import org.apache.tomcat.util.json.JSONParser;
 import org.json.simple.JSONObject;
 
+import service.BoardLikeService;
+
 /**
  * Servlet implementation class BoardLike
  */
@@ -24,7 +26,6 @@ public class BoardLike extends HttpServlet {
         super();
         // TODO Auto-generated constructor stub
     }
-
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String jsonParam = request.getParameter("like");
@@ -41,7 +42,7 @@ public class BoardLike extends HttpServlet {
 			e.printStackTrace();
 		}
 	}
-}
+
 
 	private void togleBoardLikeServiceImpl() {
 		// TODO Auto-generated method stub
