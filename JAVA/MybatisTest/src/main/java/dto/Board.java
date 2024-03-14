@@ -12,7 +12,7 @@ public class Board {
 	private Integer viewcount;
 	private Integer likecount;
 	
-	
+	// get, set
 	public Integer getNum() {
 		return num;
 	}
@@ -61,5 +61,8 @@ public class Board {
 	public void setLikecount(Integer likecount) {
 		this.likecount = likecount;
 	}
+	
+	
+	
 	
 }

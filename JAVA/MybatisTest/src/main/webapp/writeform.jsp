@@ -28,6 +28,7 @@ table {
 </style>
 </head>
 <body>
+<jsp:include page="main.jsp"/>
 	<section id="./writeForm">
 		<h2>게시판글등록</h2>
 		<form action="boardwrite" method="post" enctype="multipart/form-data" name="boardform">

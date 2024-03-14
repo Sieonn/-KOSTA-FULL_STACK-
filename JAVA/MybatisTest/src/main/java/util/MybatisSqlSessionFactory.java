@@ -7,22 +7,25 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 public class MybatisSqlSessionFactory {
-	private static SqlSessionFactory sqlSessionFactory;
-	
+	private static SqlSessionFactory sqlSessionFactroy;
+
 	static {
 		try {
-			//설정파일에 스트림 생성
-			InputStream inputStream=Resources.getResourceAsStream("resource/mybatis-config.xml");
-			//SqlSessionFactoryBuilder 생성
-			SqlSessionFactoryBuilder sqlSessionFactoryBuilder=new SqlSessionFactoryBuilder();
-			//sqlSessionFactory 생성
-			sqlSessionFactory=sqlSessionFactoryBuilder.build(inputStream);
-		} catch(Exception e) {
+			// 설정파일에 스트림 생성
+			InputStream inputStream = Resources.getResourceAsStream("resource/mybatis-config.xml");
+			
+			// SqlSessionFactoryBuilder 생성
+			SqlSessionFactoryBuilder sqlSessionFactroyBuilder = new SqlSessionFactoryBuilder();
+			
+			// SqlSessionFactory 생성
+			sqlSessionFactroy = sqlSessionFactroyBuilder.build(inputStream);
+
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
-	
-	public static SqlSessionFactory getSqlSessionFactory(){
-		return sqlSessionFactory;
+
+	public static SqlSessionFactory getSqlSessionFactory() {
+		return sqlSessionFactroy;
 	}
 }

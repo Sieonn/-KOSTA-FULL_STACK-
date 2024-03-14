@@ -8,32 +8,37 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import service.BoardService;
-import service.BoardServiceImplement;
+import service.BoardServiceImpl;
 
+/**
+ * Servlet implementation class BoardList
+ */
 @WebServlet("/boardlist")
 public class BoardList extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
     public BoardList() {
         super();
+        // TODO Auto-generated constructor stub
     }
 
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		try {
-			BoardService boardService=new BoardServiceImplement();
+			BoardService boardService = new BoardServiceImpl();
 			boardService.boardListByPage(request);
+//			request.getRequestDispatcher("boardlist.jsp");
 			request.getRequestDispatcher("boardlist.jsp").forward(request, response);
-		} catch(Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
-			request.setAttribute("err", "게시글 목록 조회 실패");
+			request.setAttribute("err", "에러가 발생했습니다.");
 			request.getRequestDispatcher("error.jsp").forward(request, response);
 		}
-		
-	}
-
-	
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	
 	}
 
 }

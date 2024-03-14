@@ -7,70 +7,73 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style type="text/css">
-	h2 {text-align: center;}
-	#h2_left{margin-left: 90px;}
-	table{margin: auto; width: 800px;}
-	#tr_top{background: orange; text-align: center;}
-	#emptyArea{margin: auto; width: 800px; text-align: center};
-	#emptyArea a{
+	h3 {text-align:center;}
+	table {margin: auto; width:800px;}
+	#tr_top {background : orange; text-align:center;}
+	#emptyArea {margin:auto; width:800px; text-align:center;}
+	#emptyArea a {
 		display: inline-block;
-		width: 20px;
-		height: 20px;
+		width:20px;
+		height:20px;
 		text-decoration: none;
 	}
-	#emptyArea .btn{
-		background: lightgray;
+	
+	#emptyArea .btn {
+		background:lightgray;
 	}
-	#emptyArea .select{
-		background: lightblue;
+	
+	#emptyArea .select {
+		background:lightblue;
 	}
 </style>
 </head>
 <body>
-<h2>글 목록&nbsp;&nbsp;<a id="h2_left" href="boardwrite">글쓰기</a></h2>
-<table>
-	<tr id="tr_top">
-		<th>번호</th><th>제목</th><th>작성자</th><th>날짜</th><th>조회수</th><th>삭제</th>
+<jsp:include page="main.jsp"/>
+<h2>글 목록&nbsp;&nbsp;<a href="boardwrite">글쓰기</a></h2>
+	<table>
+		<tr id="tr_top">
+			<th>번호</th><th>제목</th><th>작성자</th><th>날짜</th><th>조회수</th><th>삭제</th>			
+		</tr>
 		<c:forEach items="${boardList}" var="board">
 			<tr>
 				<td>${board.num}</td>
-				<td><a href="boarddetail?num=${board.num}">${board.subject}</a></td>
+				<td><a href="boarddetail?num=${board.num }">${board.subject}</a></td>
 				<td>${board.writer}</td>
 				<td>${board.writedate}</td>
 				<td>${board.viewcount}</td>
 			</tr>
 		</c:forEach>
-	</tr>
-</table>
-<div id="emptyArea">
+	</table>
+	
+	<div id="emptyArea">
 	<c:choose>
-		<c:when test="${pageInfo.curPage==1}">
+		<c:when test="${pageInfo.curPage ==1 }">
 			<a>&lt;</a>
 		</c:when>
 		<c:otherwise>
-			<a href="boardlist?page=${pageInfo.curPage-1 }">&lt;</a>	
+			<a href="boardlist?page=${pageInfo.curPage-1 }">&lt;</a>
 		</c:otherwise>
 	</c:choose>
-	
-	<c:forEach begin="${pageInfo.startPage}" end="${pageInfo.endPage}" var="i">
+		
+		
+		<c:forEach begin="${pageInfo.startPage}" end="${pageInfo.endPage}" var="i">
+			<c:choose>
+				<c:when test="${i== pageInfo.curPage }">
+					<a href="boardlist?page=${i }"  class="select">${i }</a>
+				</c:when>
+				<c:otherwise>
+					<a href="boardlist?page=${i }" class="btn">${i }</a>
+				</c:otherwise>
+			</c:choose>
+		</c:forEach>
 		<c:choose>
-			<c:when test="${i==pageInfo.curPage}">
-				<a href="boardlist?page=${i}" class="select">${i}</a>
-			</c:when>
-			<c:otherwise>
-				<a href="boardlist?page=${i}" class="btn">${i}</a>
-			</c:otherwise>
-		</c:choose>
-	</c:forEach>
-	
-	<c:choose>
-		<c:when test="${pageInfo.curPage==pageInfo.allPage}">
-			<a>&gt;</a>	
+		<c:when test="${pageInfo.curPage == pageInfo.allPage }">
+			<a>&gt;</a>
 		</c:when>
 		<c:otherwise>
-			<a href="boardlist?page=${pageInfo.curPage+1}">&gt;</a>
+			<a href="boardlist?page=${pageInfo.curPage+1 }">&gt;</a>
 		</c:otherwise>
 	</c:choose>
-</div>
+	</div>
 </body>
 </html>

@@ -2,16 +2,12 @@ package service;
 
 import javax.servlet.http.HttpServletRequest;
 
-import dto.Board;
+import dto.Member;
 
 public interface MemberService {
-
-	void MemberListByPage(HttpServletRequest request) throws Exception;
-
-	Board memberDetail(Integer num) throws Exception;
-
-	void memberWrite(HttpServletRequest request) throws Exception;
-
-	void memberModify(HttpServletRequest request) throws Exception;
-
+	void join(HttpServletRequest request) throws Exception;
+	
+	void login(HttpServletRequest request) throws Exception;
+	
+	boolean memberIdCheck(String id) throws Exception;
 }
