@@ -35,15 +35,16 @@ table {
 			const imageSrc = URL.createObjectURL(fileDom.files[0]);
 			imageBox.src = imageSrc;
 		})
-		
 	}
 </script>
 </head>
 <body>
+<jsp:include page="main.jsp"/>
+
 	<section id="./writeForm">
-		<h2>게시판글 수정</h2>
-		<form action="boardmodify" method="post" enctype="multipart/form-data" name="boardform">
-			<input type="hidden" name="num" value="${board.num }"/>
+		<h2>게시판글수정</h2>
+		<form action="boardmodify" method="post" enctype="multipart/form-data">
+			<input type="hidden" name="num" value="${board.num}"/>
 			<table>
 				<tr>
 					<td class="td_left"><label for="writer">글쓴이</label></td>
@@ -52,7 +53,7 @@ table {
 				<tr>
 					<td class="td_left"><label for="subject">제목</label></td>
 					<td class="td_right"><input name="subject" type="text"
-						id="subject" required="required" value="${board.subject }" /></td>
+						id="subject" required="required"  value="${board.subject }"/></td>
 				</tr>
 				<tr>
 					<td class="td_left"><label for="content">내용</label></td>
@@ -60,14 +61,13 @@ table {
 							cols="40" rows="15" required="required">${board.content }</textarea></td>
 				</tr>
 				<c:if test="${board.filenum ne null }">
-				<tr>
-					<td class="td_left"><lable>이미지</lable></td>
-					<td class="td_right">
-					<img src="image?num=${board.filenum }" width="100px" id="image-box"/>
-					</td>
-				</tr>
-				</c:if>
-				
+					<tr>
+						<td class="td_left"><label>이미지</label></td>
+						<td class="td_right">
+							<img src="image?num=${board.filenum}" width="100px" id="image-box"/>
+						</td>
+					</tr>
+				</c:if>				
 				<tr>
 					<td class="td_left"><label for="file">이미지 파일 첨부</label></td>
 					<td class="td_right"><input name="file" type="file" id="file" accept="image/*"/></td>
@@ -75,7 +75,6 @@ table {
 			</table>
 			<section id="commandCell">
 				<input type="submit" value="수정">&nbsp;&nbsp; 
-				
 				<a href="boardlist">목록</a>&nbsp;&nbsp;&nbsp;
 			</section>
 		</form>

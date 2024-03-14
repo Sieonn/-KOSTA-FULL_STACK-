@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
-	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-	
-<!-- 충돌이 날 수 있기 때문에 이름을 지정 -->
-<mapper namespace="mapper.member">
-	<!-- <select id="loginMember" resultType="boolean">
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+ <mapper namespace="mapper.member">
+	<insert id="insertMember" parameterType="dto.Member">
 		<![CDATA[
-			select * form member where id = #{id}, password = #{password}
-		]]>
-	</select> -->
-	
-	<insert id="insertMember" parameterType="dto.Member" keyProperty="id">
-		<![CDATA[
-			insert into member(id, name, password, email, address)
+			insert into member (id,name,password,email,address)
 			values (#{id},#{name},#{password},#{email},#{address})
 		]]>
 	</insert>
 	
 	<select id="selectMember" parameterType="String" resultType="dto.Member">
-			select * from member where id = #{id}
+		<![CDATA[
+			select * from member where id=#{id}
+		]]>
 	</select>
-</mapper>
+ </mapper>

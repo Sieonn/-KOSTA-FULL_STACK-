@@ -7,7 +7,6 @@ public class Member {
 	private String email;
 	private String address;
 	
-	
 	public Member() {}
 	
 	public Member(String id, String name, String password, String email, String address) {

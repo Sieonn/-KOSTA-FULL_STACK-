@@ -9,6 +9,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import dto.Board;
+import dto.Member;
+import service.BoardLikeService;
+import service.BoardLikeServiceImpl;
 import service.BoardService;
 import service.BoardServiceImpl;
 
@@ -34,14 +37,20 @@ public class BoardDetail extends HttpServlet {
 		request.setCharacterEncoding("utf-8");
 		Integer num = Integer.parseInt(request.getParameter("num"));
 		
-		// 서비스에서 Board로 받아서 request에 담아 boarddetailjsp로 포워드 한다.
+		//서비스에서 Board를 받아서 request에 담아 boarddetail.jsp로 포워드한다.
 		try {
 			BoardService boardService = new BoardServiceImpl();
 			Board board = boardService.boardDetail(num);
 			request.setAttribute("board", board);
+			//로그인 상태일 경우 좋아요 여부 확인하여 전송
+			Member member = (Member)request.getSession().getAttribute("user");
+			if(member!=null) {
+				BoardLikeService boardLikeService = new BoardLikeServiceImpl();
+				boolean boardLike =  boardLikeService.boardLike(member.getId(), num);
+				request.setAttribute("like", String.valueOf(boardLike));
+			}
 			request.getRequestDispatcher("boarddetail.jsp").forward(request, response);
-			
-		} catch (Exception e) {
+		} catch(Exception e) {
 			e.printStackTrace();
 			request.setAttribute("err", "게시글 조회 실패");
 			request.getRequestDispatcher("error.jsp").forward(request, response);

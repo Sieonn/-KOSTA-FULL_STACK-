@@ -10,36 +10,18 @@ public class BFile {
 	private String contenttype;
 	private Date uploaddate;
 	
-	// 생성자(기본)
-	public BFile() {}
-	
-	// 생성자
-	public BFile(Integer num, String directory, String name, Long size, String contenttype, Date uploaddate) {
-		this.num = num;
-		this.directory = directory;
-		this.name = name;
-		this.size = size;
-		this.contenttype = contenttype;
-		this.uploaddate = uploaddate;
-	}
-	
-	
-	// get, set
 	public Integer getNum() {
 		return num;
 	}
 	public void setNum(Integer num) {
 		this.num = num;
 	}
-
 	public String getDirectory() {
 		return directory;
 	}
-
 	public void setDirectory(String directory) {
 		this.directory = directory;
 	}
-
 	public String getName() {
 		return name;
 	}
@@ -64,6 +46,4 @@ public class BFile {
 	public void setUploaddate(Date uploaddate) {
 		this.uploaddate = uploaddate;
 	}
-	
-	
 }

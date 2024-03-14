@@ -1,6 +1,7 @@
 package controller;
 
 import java.io.IOException;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -32,11 +33,10 @@ public class BoardList extends HttpServlet {
 		try {
 			BoardService boardService = new BoardServiceImpl();
 			boardService.boardListByPage(request);
-//			request.getRequestDispatcher("boardlist.jsp");
 			request.getRequestDispatcher("boardlist.jsp").forward(request, response);
-		} catch (Exception e) {
+		} catch(Exception e) {
 			e.printStackTrace();
-			request.setAttribute("err", "에러가 발생했습니다.");
+			request.setAttribute("err", "게시판 글목록 조회 실패");
 			request.getRequestDispatcher("error.jsp").forward(request, response);
 		}
 	}

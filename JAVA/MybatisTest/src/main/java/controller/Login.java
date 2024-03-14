@@ -1,6 +1,7 @@
 package controller;
 
 import java.io.IOException;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -36,14 +37,13 @@ public class Login extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
 		try {
 			MemberService memberService = new MemberServiceImpl();
 			memberService.login(request);
 			response.sendRedirect("main");
-		} catch (Exception e) {
+		} catch(Exception e) {
 			e.printStackTrace();
-			request.setAttribute("err", "로그인 오류");
+			request.setAttribute("err", e.getMessage());
 			request.getRequestDispatcher("error.jsp").forward(request, response);
 		}
 	}

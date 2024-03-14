@@ -39,14 +39,12 @@ public class Join extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		try {
 			MemberService memberService = new MemberServiceImpl();
-			// 매서드를 사용하기 위해서 객체를 만들어 줌
 			memberService.join(request);
 			response.sendRedirect("main");
 		} catch(Exception e) {
 			e.printStackTrace();
-			request.setAttribute("err", "회원가입 오류");
+			request.setAttribute("err", e.getMessage());
 			request.getRequestDispatcher("error.jsp").forward(request, response);
 		}
 	}
-
 }

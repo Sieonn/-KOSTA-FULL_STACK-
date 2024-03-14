@@ -1,6 +1,7 @@
 package controller;
 
 import java.io.IOException;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -13,7 +14,7 @@ import service.MemberServiceImpl;
 /**
  * Servlet implementation class MemberDoubleId
  */
-@WebServlet("/memberdoubleid")
+@WebServlet("/memberDoubleId")
 public class MemberDoubleId extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -35,7 +36,7 @@ public class MemberDoubleId extends HttpServlet {
 			MemberService memberService = new MemberServiceImpl();
 			boolean doubleId = memberService.memberIdCheck(id);
 			response.getWriter().write(String.valueOf(doubleId));
-		} catch( Exception e) {
+		} catch(Exception e) {
 			response.sendError(500);
 		}
 	}

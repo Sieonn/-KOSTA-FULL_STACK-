@@ -40,12 +40,9 @@ public class BoardModify extends HttpServlet {
 			request.setAttribute("board", board);
 			request.getRequestDispatcher("modifyform.jsp").forward(request, response);
 		} catch(Exception e) {
-			e.printStackTrace();
 			request.setAttribute("err", "게시글 상세 조회 실패");
 			request.getRequestDispatcher("error.jsp").forward(request, response);
-			
 		}
-		
 	}
 
 	/**
@@ -53,13 +50,12 @@ public class BoardModify extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		try {
-			System.out.println("modify");
 			BoardService boardService = new BoardServiceImpl();
 			boardService.boardModify(request);
 			response.sendRedirect("boardlist");
-		}catch(Exception e) {
+		} catch(Exception e) {
 			e.printStackTrace();
-			request.setAttribute("err", "게시글 수정 실패");
+			request.setAttribute("err", "게시판 글 수정 실패");
 			request.getRequestDispatcher("error.jsp").forward(request, response);
 		}
 	}
