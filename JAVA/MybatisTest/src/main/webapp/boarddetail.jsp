@@ -44,12 +44,12 @@ type:'post',
 async:true,
 data:{like:JSON.stringify({memberId: ${user.id}",boardNum: ${board.num} " })},
 success:function(result){
-	'<c:set>'
+	'<c:set var="like" value="${result}"/>'
 }
 })
 })
 })
-
+</script>
 </head>
 <body>
 	<jsp:include page="main.jsp" />
