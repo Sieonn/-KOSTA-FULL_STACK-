@@ -40,4 +40,4 @@ CREATE TABLE boardlike(
 	num INT AUTO_INCREMENT PRIMARY KEY,
 	memberid VARCHAR(30) REFERENCES member(id),
 	boardnum INT REFERENCES board(num)
-);
+);boardmembermember
