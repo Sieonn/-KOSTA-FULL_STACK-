@@ -40,4 +40,29 @@ CREATE TABLE boardlike(
 	num INT AUTO_INCREMENT PRIMARY KEY,
 	memberid VARCHAR(30) REFERENCES member(id),
 	boardnum INT REFERENCES board(num)
-);boardmembermember
+);
+
+DROP TABLE userinfo;
+
+CREATE TABLE userInfo(
+   id VARCHAR(25userinfo5) PRIMARY KEY,
+   PASSWORD VARCHAR(50),
+   NAME VARCHAR(100),
+   nickname VARCHAR(100),
+   email VARCHAR(100),
+   address VARCHAR(100),
+   profile_img VARCHAR(255),
+   thumbnail_img VARCHAR(255)
+
+);
+
+
+CREATE TABLE Location(
+num INT AUTO_INCREMENT PRIMARY KEY,
+address VARCHAR(255),
+title VARCHAR(255)
+);
+
+INSERT INTO Location (address, title) VALUES ('서울 금천구 가산디지털1로 70','호서대벤처타워');
+INSERT INTO Location (address, title) VALUES ('전북특별자치도 남원시 숲정이3길 13','청화대');
+INSERT INTO Location (address, title) VALUES ('서울 영등포구 국회대로 지하 758','국회의사당');
